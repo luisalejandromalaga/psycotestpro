@@ -1,0 +1,138 @@
+
+
+
+
+
+
+/*Colores no bootstrap*/
+.negro
+{
+    background:#20232a;
+
+}
+
+
+/*alinear a la derecha elementos del header*/
+
+.derecha
+{
+  float: right;
+}
+
+
+
+.imgnoticia
+{
+  
+  background: #21272b !important;
+  opacity: .5; 
+
+}
+
+
+.rownoticia
+{
+  
+  background: #21272b !important;
+
+}
+
+
+.centered
+ {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.fullscreen
+{
+  top: 10%;
+  left: 90%;
+}
+
+
+/*numero de partes form*/
+
+.form-inp {
+
+  width: 90%;
+  height: calc(1.6em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.form-carr {
+
+
+
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+
+/*carrusel atras adelante botones*/
+
+.carousel-control-prev-icono,
+.carousel-control-next-icono {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: no-repeat 50%/100% 100%;
+}
+
+.carousel-control-prev-icono {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icono {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+
+
+/*configura la imagen del card de tipo de pago*/
+
+.card-img-tope {
+  width: 90%;
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+
+/*configura el icono del usuario*/
+
+.usuario
+{
+  width: 5%;
+
+}
+
+
+/*grosor de bordes*/
+
+.borderGrueso {
+     border-width:4px !important;
+}

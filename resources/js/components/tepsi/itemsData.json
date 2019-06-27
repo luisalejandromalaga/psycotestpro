@@ -1,0 +1,19 @@
+{
+	"item1":{
+		"subtest":"Coordinación",
+		"nombre":"Traslada agua de un vaso a otro sin derramar",
+		"materiales":"Dos vasos, uno vacío y el otro lleno de agua",
+		"ubicacion":"Examinador y niño de pie frente a la mesa",
+		"administracion":"El examinador coloca los dos vasos sobre la mesa. Luego señalando el vaso lleno con agua",
+		"aprobacion":"El niño traslada el agua al vaso vacío sin derramar"
+	},
+
+	"item2":{
+		"subtest":"Coordinación",
+		"nombre":"Construye un puente con tres cubos con modelo presente",
+		"materiales":"Seis cubos",
+		"ubicacion":"El examinador y el niño sentados junto a la mesa",
+		"administracion":"El examinador coloca los dos vasos sobre la mesa. Luego señalando el vaso lleno con agua",
+		"aprobacion":"El niño construye un puente dejando una abertura entre los dos cubos de la base."	
+	}
+}
