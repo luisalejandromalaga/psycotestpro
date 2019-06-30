@@ -13,7 +13,7 @@
 
         <!-- Scripts -->
        
-        
+           <script src="{{asset('js/app.js')}}"></script>
         <!-- Fonts -->
 
         <!-- Styles -->
@@ -73,7 +73,7 @@
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4> <p class="m-1">Si el niño dibuja un triángulo que tenga tres ángulos claros, cerrados, con líneas fundamentalmente rectas. Las líneas de los lados no deben prolongarse más de 0.5 cm fuera del ángulo.</p>
 
-                            <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
+                            <div class="btn-group btn-group-toggle mb-1">
                                  <form  method="post" action="{{ route('post_res') }}">
                                          @csrf
                                         <input type="hidden" name="id" value="11">

@@ -11,6 +11,7 @@ class pdf extends Controller
 			$d = $todayh['mday'];
 		    $m = $todayh['mon'];
 		    $y = $todayh['year'];
+		     $fecha_n;
 		    list($año,$mes, $dia ) = explode('-', $fecha_n,3);
 			$dias = $dia+($mes-1)*30;
 			$dias_ahora =$d+($m-1)*30;
@@ -18,19 +19,251 @@ class pdf extends Controller
 			$GLOBALS['edad_y']=floor($dias_r/360);
 			$GLOBALS['edad_m']=floor(($dias_r%360)/30);
 	}
+	public function precalculo(){
+		$res =\Session::get('respuestas');
+		
+		$informe = \Session::get('informe');
+		$datos = \Session::get('cliente');
+		$fecha_n =$datos['fecha_nac'];//"2015-04-03";
+		$dni=$datos['dni'];
+		$nombre_m=$datos['madre'];
+		$nombre_p=$datos['padre'];
+		$telefono=$datos['telefono'];
+		$grado=$datos['estudios'];
+		$ocupacion=$datos['ocupacion'];
+		$motivo=$datos['motivo'];
+		$conclusion=$informe['conclusiones'];
+		$observacion=$informe['observacion'];
+		$recomendacion = $informe['recomendaciones'];
+		$edad_y = 4;
+		$edad_m = 3;
+		
+		$this->calcular_edad($fecha_n);
+
+		         
+		         $coordinacion = 0;
+		         $lenguaje = 0;
+		         $motricidad = 0;
+		         $contador = 0;
+		         $coordinacion_b = 0;
+		         $lenguaje_b = 0;
+		         $motricidad_b = 0;
+
+		         $sumatoria = 0;
+		              // output data of each row
+
+		            foreach ($res as $key) {
+		            
+			            	$contador++;
+			            	$sumatoria = $sumatoria + $key ;
+			        		$id_contador = "t_"; 
+			        		
+			        		if($contador == 16 ){
+			        			$coordinacion = $sumatoria;
+			        			$sumatoria = 0 ;
+			        		}
+			        		else if($contador == 40 ){
+			        			$lenguaje = $sumatoria;
+			        			$sumatoria = 0 ;
+			        		}
+			        		else if($contador == 52 ){
+			        			$motricidad = $sumatoria;
+			        			$sumatoria = 0 ;
+			        		}
+		        			
+		        	}
+		        	return $motricidad;
+		         $coordinacion_b =$coordinacion;
+		         $lenguaje_b =$lenguaje ;
+		         $motricidad_b = $motricidad;
+		         
+
+		         //calcular 2 a 2,6
+		         if($edad_y==2 && $edad_m <6){
+			         if($lenguaje <= 0 ){
+			         	$lenguaje = 38;
+			     	 }
+			     	 else if($lenguaje > 0){
+			     	 	$lenguaje = ($lenguaje*3)+38;
+			     	 }
+			     	 if($coordinacion <= 0 ){
+			         	$coordinacion = 31;
+			     	 }
+			     	 else if($coordinacion > 0){
+			     	 	$coordinacion = ($coordinacion*7)+ 31;
+			     	 }
+			     	 if($motricidad <= 0 ){
+			         	$motricidad = 35;
+			     	 }
+			     	 else if($motricidad > 0){
+			     	 	$motricidad = ($motricidad*6)+ 35;
+			     	 }
+		     	 }
+		     	 //calcular 2,6 a 3
+		     	 else if($edad_y>=2 && $edad_m > 5 && $edad_y <= 3 ){
+			         if($lenguaje <= 0 ){
+			         	$lenguaje = 30;
+			     	 }
+			     	 else if($lenguaje > 0){
+			     	 	$lenguaje = ($lenguaje*2)+30;
+			     	 }
+			     	 if($coordinacion <= 0 ){
+			         	$coordinacion = 27;
+			     	 }
+			     	 else if($coordinacion > 0){
+			     	 	$coordinacion = ($coordinacion*4)+ 27;
+			     	 }
+			     	 if($motricidad <= 0 ){
+			         	$motricidad = 29;
+			     	 }
+			     	 else if($motricidad > 0){
+			     	 	$motricidad = ($motricidad*5)+ 29;
+			     	 }
+		     	 }
+		     	 //calcular 3 a 3,5
+		     	 else if($edad_y==3 && $edad_m <6){
+			         if($lenguaje <= 0 ){
+			         	$lenguaje = 24;
+			     	 }
+			     	 else if($lenguaje > 0){
+			     	 	$lenguaje = ($lenguaje*2)+24;
+			     	 }
+			     	 if($coordinacion <= 0 ){
+			         	$coordinacion = 20;
+			     	 }
+			     	 else if($coordinacion > 0){
+			     	 	$coordinacion = ($coordinacion*4)+ 20;
+			     	 }
+			     	 if($motricidad <= 0 ){
+			         	$motricidad = 20;
+			     	 }
+			     	 else if($motricidad > 0){	
+			     	 	$motricidad = ($motricidad*5)+ 20;
+			     	 }
+		     	 }
+		     	 //calcular 3,6 a 4
+		     	 else if($edad_y>=3 && $edad_m > 5 && $edad_y <= 4 ){
+			         if($lenguaje <= 4 ){
+			         	$lenguaje = 20;
+			     	 }
+			     	 else if($lenguaje > 4){
+			     	 	$lenguaje = (($lenguaje-4)*2)+20;
+			     	 }
+			     	 if($coordinacion <= 3 ){
+			         	$coordinacion = 18;
+			     	 }
+			     	 else if($coordinacion > 3){
+			     	 	$coordinacion = (($coordinacion-3)*5)+ 18;
+			     	 }
+			     	 if($motricidad <= 1 ){
+			         	$motricidad = 17;
+			     	 }
+			     	 else if($motricidad > 1){
+			     	 	$motricidad = (($motricidad-1)*5)+ 17;
+			     	 }
+		     	 }
+		     	 //calcular 4 a 4,5
+		     	 else if($edad_y==4 && $edad_m <6){
+			         if($lenguaje <= 8 ){
+			         	$lenguaje = 18;
+			     	 }
+			     	 else if($lenguaje > 8){
+			     	 	$lenguaje = (($lenguaje-8)*3)+18;
+			     	 }
+			     	 if($coordinacion <= 5 ){
+			         	$coordinacion = 19;
+			     	 }
+			     	 else if($coordinacion > 5){
+			     	 	$coordinacion = (($coordinacion-5)*5)+ 19;
+			     	 }
+			     	 if($motricidad <= 3 ){
+			         	$motricidad = 20;
+			     	 }
+			     	 else if($motricidad > 3){	
+			     	 	$motricidad = (($motricidad-3)*6)+ 20;
+			     	 }
+		     	 }
+		     	 //calcular 4,5 a 5
+		     	 else if($edad_y >=4 && $edad_m > 5 && $edad_y <= 5 ){
+			         if($lenguaje <= 10 ){
+			         	$lenguaje = 18;
+			     	 }
+			     	 else if($lenguaje > 10){
+			     	 	//$lenguaje = ($lenguaje*2)+1;
+			     	 	$lenguaje = (($lenguaje-10)*3)+18;
+			     	 }
+			     	 if($coordinacion <= 6 ){
+			         	$coordinacion = 17;
+			     	 }
+			     	 else if($coordinacion > 6){
+			     	 	//$coordinacion = ($coordinacion*3)+($coordinacion-5);
+			     	 	$coordinacion = (($coordinacion-6)*5)+ 17;
+			     	 }
+			     	 if($motricidad <= 4 ){
+			         	$motricidad = 18;
+			     	 }
+			     	 else if($motricidad > 4){
+			     	 	//$motricidad = ($motricidad*5)+ ($motricidad - 7);
+			     	 	$motricidad = (($motricidad-4)*6)+ 18;
+			     	 }
+		     	 }
+		     	 $lenguaje_t = "normal";
+		     	 $coordinacion_t = "normal";
+		     	 $motricidad_t = "normal";
+
+		     	 if($lenguaje <= 30 ){
+		         	$lenguaje_t = "retraso";
+		     	 }
+		     	 else if($lenguaje < 40){
+		     	 	$lenguaje_t = "riesgo";
+		     	 }
+		     	 if($coordinacion <= 30 ){
+		         	$coordinacion_t = "retraso";
+		     	 }
+		     	 else if($coordinacion < 40){
+		     	 	$coordinacion_t = "riesgo";
+		     	 }
+		     	 if($motricidad <= 30 ){
+		         	$motricidad_t = "retraso";
+		     	 }
+		     	 else if($motricidad < 40){
+		     	 	$motricidad_t = "riesgo";
+		     	 }
+		$todayh = getdate();
+			$d = $todayh['mday'];
+		    $m = $todayh['mon'];
+		    $y = $todayh['year'];
+		    $array_r = array();
+		       $array_r[0]=$coordinacion_b;
+		       $array_r[1]=$coordinacion;
+		       $array_r[2]=$coordinacion_t;
+
+		       $array_r[3]=$lenguaje_b;
+		       $array_r[4]= $lenguaje;
+		       $array_r[5]=$lenguaje_t;
+
+		       $array_r[6]=$motricidad_b;
+		       $array_r[7]=$motricidad;
+		       $array_r[8]= $motricidad_t;
+		       return view('tepsi/informeprevio', compact('array_r'));
+	}
+
     public function makepdf(){
     	$res =\Session::get('respuestas');
-    	$nombre ="demo";
-		$fecha_n ="2015-04-03";
-		$dni="000000";
-		$nombre_m="demo";
-		$nombre_p="demo";
-		$telefono="12312";
-		$grado="asda";
-		$ocupacion="awdasd";
-		$motivo="nose";
-		$conclusion="tampoco";
-		$observacion="faltaregistro";
+		$informe = \Session::get('informe');
+		$datos = \Session::get('cliente');
+		$nombre = $datos['nombre'];
+		$fecha_n =$datos['fecha_nac'];//"2015-04-03";
+		$dni=$datos['dni'];
+		$nombre_m=$datos['madre'];
+		$nombre_p=$datos['padre'];
+		$telefono=$datos['telefono'];
+		$grado=$datos['estudios'];
+		$ocupacion=$datos['ocupacion'];
+		$motivo=$datos['motivo'];
+		$conclusion=$informe['conclusiones'];
+		$observacion=$informe['observacion'];
+		$recomendacion = $informe['recomendaciones'];
 		$edad_y = 4;
 		$edad_m = 3;
 		

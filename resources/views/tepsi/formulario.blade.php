@@ -35,24 +35,24 @@
 
             <div class="form-group col-md-3">
               <label for="inputEmail4">Nombre completo del evaluado</label>
-              <input type="text" class="form-control" name ="name" id="name" placeholder="Nombre completo del evaluado">
+              <input type="text" class="form-control" name ="name" id="name" placeholder="Nombre completo del evaluado" important="">
             </div>
 
             <div class="form-group col-md-3">
               <label for="inputEmail4">Documento de identidad</label>
-              <input type="tel" class="form-control" name="dni" id="dni" placeholder="Documento de identidad">
+              <input type="tel" class="form-control" name="dni" id="dni" placeholder="Documento de identidad" >
             </div>
 
 
             <div class="form-group col-md-3">
               <label for="inputEmail4">Fecha de nacimiento</label>
-              <input type="date" class="form-control"name ="fecha_nac" id="fecha_nac" placeholder="Fecha de Nacimiento">
+              <input type="date" class="form-control"name ="fecha_nac" id="fecha_nac" placeholder="Fecha de Nacimiento" important>
             </div>
 
 
              <div class="form-group col-md-3">
               <label for="inputEmail4">Lugar de nacimiento</label>
-              <input type="text" class="form-control" name ="lugar_nac" id="lugar_nac" placeholder="Lugar de nacimiento">
+              <input type="text" class="form-control" name ="lugar_nac" id="lugar_nac" placeholder="Lugar de nacimiento" important>
             </div>           
 
           </div>
@@ -113,13 +113,13 @@
 
             <div class="form-group col-md-3">
               <label for="inputEmail4">Número de celular</label>
-              <input type="text" class="form-control" name="celular" id="celular" placeholder="Número de celular">
+              <input type="text" class="form-control" name="celular" id="celular" placeholder="Número de celular" important>
             </div>
 
 
             <div class="form-group col-md-3">
               <label for="inputEmail4">Correo electrónico</label>
-              <input type="text" class="form-control" name="correo" id="correo" placeholder="Correo electrónico ">
+              <input type="text" class="form-control" name="correo" id="correo" placeholder="Correo electrónico " important>
             </div>
  
             <div class="form-group col-md-3">

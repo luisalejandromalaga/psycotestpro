@@ -44,7 +44,7 @@
 
                               <div class="">
                                 <h2>Nombre del niño/a:</h2>
-                                <p>"$Nombre"+"  $Apellido" </p>
+                                <p>{{$cli}}</p>
                                 <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño">
                                   <input class="form-carr mb-1" type="text"  name="text-1">
                                 </div>   

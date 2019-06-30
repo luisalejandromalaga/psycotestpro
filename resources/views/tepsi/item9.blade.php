@@ -12,11 +12,12 @@
         <meta charset="utf-8">
 
         <!-- Scripts -->
-     
+        <script src="{{asset('js/app.js')}}"></script>
         <!-- Fonts -->
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
+        
 
 </head>
 
@@ -72,7 +73,7 @@
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4> <p class="m-1">Si el niño dibuja un cirulo producto de un solo movimiento y no de movimientos circulares continuos. El circulo debe estar cerrado o presentar una apertura máxima de 3mm. No se aceptan óvalos, sino formas fundamentalmente circulares.</p>
 
-                            <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
+                            <div class="btn-group btn-group-toggle mb-1" >
                                  <form  method="post" action="{{ route('post_res') }}">
                                          @csrf
                                         <input type="hidden" name="id" value="9">

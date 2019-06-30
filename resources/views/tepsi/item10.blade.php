@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta charset="utf-8">
 
-       
+          <script src="{{asset('js/app.js')}}"></script>
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
 
 </head>
@@ -68,7 +68,7 @@
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4> <p class="m-1">Si el niño dibuja dos líneas fundamentalmente rectas que se intersecten. Lo central es la intersección de las líneas. No se aceptan intersecciones en los extremos de una de las dos líneas. Las rotaciones no se consideran.</p>
 
-                            <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
+                            <div class="btn-group btn-group-toggle mb-1" >
                                 <form  method="post" action="{{ route('post_res') }}">
                                          @csrf
                                         <input type="hidden" name="id" value="10">

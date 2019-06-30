@@ -45,12 +45,17 @@ class HomeController extends Controller
         $array['correo'] = $request->input('correo');
         $array['direccion'] = $request->input('direccion');
         $array['motivo'] = $request->input('motivo');
-        if(!\Session::has('cliente')) \Session::put('cliente',$array);
+        \Session::put('cliente',$array);
        
         return redirect()->route('item1');
     }
     public function post_informe(Request $request)
     {
+        $array = array();   
+        $array['observacion'] = $request->input('observacion');
+        $array['conclusiones'] = $request->input('conclusiones');
+        $array['recomendaciones'] = $request->input('recomendaciones');
+        \Session::put('informe',$array);
         return redirect()->route('pdf');
     }
     public function primera_t(){
@@ -122,8 +127,7 @@ class HomeController extends Controller
                     $res[$id]  = 0;
 
                  $nombreitem =$nombreitem.($id+1);
-                 if($id == 50)
-                    return redirect()->route('informe');
+                 
                  break; 
              case 42:
              case 45:
@@ -174,7 +178,8 @@ class HomeController extends Controller
                  break;
          }
          \Session::put('respuestas',$res);
-         
+         if($id == 50)
+            return redirect()->route('informeprevio');
          return redirect()->route($nombreitem);
     }
 

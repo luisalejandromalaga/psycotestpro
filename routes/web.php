@@ -16,7 +16,6 @@ Route::post('post_res_text','HomeController@post_res_text')->name('post_res_text
 Route::get('pdf','Pdf@makepdf')->name('pdf');
 Route::post('formulario_cliente','HomeController@formulario_cliente')->name('form_cliente');
 Route::get('formulario_cliente','HomeController@formulario_cliente')->name('form_cliente');
-
 Route::post('post_informe','HomeController@post_informe')->name('post_informe');
 Route::get('post_informe','HomeController@post_informe')->name('post_informe');
 
@@ -39,16 +38,18 @@ Route::get('contactanos', function () {
     return view('contactanos');
 });
 
-
-
 /*Vistas Tepsi*/
+
+Route::get('tepsi/informeprevio','Pdf@precalculo')->name('informeprevio');
+
+
 Route::get('tepsi/informe', function () {
     return view('tepsi/informeprevio');
 })->name('informe');
 
 Route::get('tepsi/formulario', function () {
     return view('tepsi/formulario');
-})->name('formulario');
+})->name('formulario')->middleware('auth');;
 
 Route::get('tepsi/item1','HomeController@primera_t')->name('item1');
 
@@ -154,11 +155,11 @@ Route::get('tepsi/item23', function () {
 Route::get('tepsi/item24', function () {
     return view('tepsi/item24');
 })->name('item24');
- 
-
 
 Route::get('tepsi/item25', function () {
-    return view('tepsi/item25');
+    $cli =\Session::get('cliente');
+    $cli = $cli['nombre'];
+    return view('tepsi/item25',compact('cli'));
 })->name('item25');
  
 
@@ -168,7 +169,8 @@ Route::get('tepsi/item26', function () {
  
 
 Route::get('tepsi/item27', function () {
-    return view('tepsi/item27');
+     $cli =\Session::get('cliente');
+    return view('tepsi/item27',compact('cli'));
 })->name('item27');
  
 
@@ -288,10 +290,6 @@ Route::get('tepsi/item50', function () {
     return view('tepsi/item50');
 })->name('item50');
  
-
-Route::get('tepsi/informeprevio', function () {
-    return view('tepsi/informeprevio');
-});
 
 
 /*end*/

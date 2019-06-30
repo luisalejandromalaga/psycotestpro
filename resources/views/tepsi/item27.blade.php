@@ -43,13 +43,13 @@
 
                               <div class="">
                                 <h2>Nombre del padre:</h2>
-                                <p>"$Nombre"+"  $Aprellido" </p>
+                                <p>{{$cli['padre']}}</p>
                                 <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño">
                                   <input class="form-carr mb-1" type="text"  name="text-1">
                                 </div>
 
                                 <h2>Nombre de la madre:</h2>
-                                <p>"$Nombre"+"  $Aprellido" </p>
+                                <p>{{$cli['madre']}} </p>
                                 <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño">
                                   <input class="form-carr mb-1" type="text"  name="text-2">
                                 </div>  

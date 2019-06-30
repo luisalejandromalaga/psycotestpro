@@ -13,7 +13,7 @@
 
         <!-- Scripts -->
       
-        
+           <script src="{{asset('js/app.js')}}"></script>
         <!-- Fonts -->
 
         <!-- Styles -->
@@ -73,7 +73,7 @@
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4> <p class="m-1">Si el niño dibuja un cuadrado con cuatro ángulos rectos. Los ángulos deben ser aproximadamente rectos, no redondos ni puntudos. Las líneas deben ser fundamentalmente rectas y no deben prolongarse más de 0.5 cm fuera del ángulo. Solo se acepta un rectángulo si el largo de este no excede el doble del ancho del mismo.</p>
 
-                            <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
+                            <div class="btn-group btn-group-toggle mb-1" >
                                  <form  method="post" action="{{ route('post_res') }}">
                                          @csrf
                                         <input type="hidden" name="id" value="12">

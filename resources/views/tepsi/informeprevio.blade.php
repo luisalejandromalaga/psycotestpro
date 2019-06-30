@@ -45,21 +45,21 @@
   <tbody>
     <tr>
       <th scope="row">Coordinación</th>
-      <td>corBruto</td>
-      <td>Lenguaje</td>
-      <td>Normal</td>
+      <td>{{$array_r[0]}}</td>
+      <td>{{$array_r[1]}}</td>
+      <td>{{$array_r[2]}}</td>
     </tr>
     <tr>
       <th scope="row">Lenguaje</th>
-      <td>lengBruto</td>
-      <td>Thornton</td>
-      <td>Retraso</td>
+      <td>{{$array_r[3]}}</td>
+      <td>{{$array_r[4]}}</td>
+      <td>{{$array_r[5]}}</td>
     </tr>
     <tr>
       <th scope="row">Motricidad</th>
-      <td>motBruto</td>
-      <td>the Bird</td>
-      <td>Normal</td>
+      <td>{{$array_r[6]}}</td>
+      <td>{{$array_r[7]}}</td>
+      <td>{{$array_r[8]}}</td>
     </tr>
   </tbody>
 </table>

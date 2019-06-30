@@ -209,7 +209,7 @@
                                         <p>Asegúrate de tener todo lo que necesitas a mano</p>
                                         <p>Si estás seguro de que tienes a mano todo lo que necesitas para realizar la evaluación presiona "Empezar la evaluación"</p>
 
-                                        <a class="btn btn-primary mb-3" href="{{route('formulario')}}" target="_blank">
+                                        <a class="btn btn-primary mb-3" href="{{route('formulario')}}" >
                                          Empezar la evaluación
                                         </a>
 
