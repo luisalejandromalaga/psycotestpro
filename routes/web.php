@@ -24,13 +24,16 @@ Route::get('tepsi', function () {
 });
 
 
-Route::get('catalogo', function () {   
-    return view('catalogo');
+Route::get('evaluaciones', function () {   
+    return view('evaluaciones');
 });
-
 
 Route::get('comofunciona', function () {   
     return view('comofunciona');
+});
+
+Route::get('catalogo', function () {   
+    return view('catalogo');
 });
 
 

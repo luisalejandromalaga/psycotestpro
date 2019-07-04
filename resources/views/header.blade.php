@@ -15,8 +15,17 @@
     <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="css/app.css">
         <link rel="stylesheet" type="text/css" href="css/estilos.css">
-        
 
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  
+    <!-- sidebar -->
+        <link rel="stylesheet" href="sidebar/css/component.css">        
+
+
+
+        <script src="sidebar/js/classie.js"></script>   
+        <script src="sidebar/js/gnmenu.js"></script>   
+        <script src="sidebar/js/modernizr.custom.js"></script>   
 </head>
 
 
@@ -52,16 +61,16 @@
                                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}  </a>
                                         
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Perfil</a>
-                                            <a class="dropdown-item" href="#">Mis evaluaciones</a>
-                                            <a class="dropdown-item" href="#">Mis compras</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Mi perfil</a>
+                                            <a class="dropdown-item" href="{{ url('evaluaciones') }}"><i class="fa fa-file-o" aria-hidden="true"></i> Mis evaluaciones</a>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mis compras</a>
                                             <!--Solo para los administradores del sistema-->
-                                            <a class="dropdown-item" href="#">Panel de Administración</a>                                                                                        
+                                            <a class="dropdown-item" href="#"><i class="fa fa-tasks" aria-hidden="true"></i> Panel de Administración</a>                                                                                        
                                             <div class="dropdown-divider">
                                             </div>
                                             <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">Cerrar Sesión</a>
+                                                     document.getElementById('logout-form').submit();"><i class="fa fa-hand-spock-o" aria-hidden="true"></i> Cerrar Sesión</a>
                                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                 @csrf
                                             </form>
@@ -85,14 +94,24 @@
                                         
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-                                            <a class="dropdown-item" href="http://localhost/psycotestpro/public/catalogo">Catálogo</a>
-                                            <a class="dropdown-item" href="#">Formas de pago</a>
+                                            <a class="dropdown-item" href="http://localhost/psycotestpro/public/catalogo"><i class="fa fa-th-large" aria-hidden="true"></i> Catálogo</a>
+
+                                            <div class="dropdown-divider">
+                                            </div>
+
+
+                                            <a class="dropdown-item" href="#"><i class="fa fa-building-o" aria-hidden="true"></i> Para empresas</a>
+                                            <div class="dropdown-divider">
+                                            </div>
+
+                                            <a class="dropdown-item" href="#"><i class="fa fa-flask" aria-hidden="true"></i> Para investigación</a>
+                                            <div class="dropdown-divider">
+                                            </div>
+                                            <a class="dropdown-item" href="#"><i class="fa fa-credit-card" aria-hidden="true"></i> Formas de pago</a>
+
                                         </div>
                                     </li>
-
-                                    <li class="nav-item ">
-                                        <a class="nav-link text-white" href="#">Para empresas</a>
-                                    </li>                                    
+                                  
 
                                     <li class="nav-item ">
                                         <a class="nav-link text-white" href="http://localhost/psycotestpro/public/contactanos">Contactanos</a>
