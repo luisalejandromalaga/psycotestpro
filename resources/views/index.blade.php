@@ -1,5 +1,14 @@
 @extends('header')
 
+@section('title')
+PSYCOTESTPRO
+@endsection
+
+
+@section('index')
+Inicio
+@endsection
+
 @section('content')
 <!--CATALOGOphp store-->
 

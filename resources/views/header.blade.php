@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PSYCOTESTPRO</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -38,7 +38,7 @@
                         <ul class="navbar-nav mr-auto">
 
                             <li class="nav-item active mr-3">
-                                <a class="nav-link" >Inicio <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" >@yield('index')<span class="sr-only">(current)</span></a>
                             </li>   
 
 
