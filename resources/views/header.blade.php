@@ -62,7 +62,7 @@
                                         
                                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                             <a class="dropdown-item" href="#"><i class="fa fa-user-o" aria-hidden="true"></i> Mi perfil</a>
-                                            <a class="dropdown-item" href="{{ url('evaluaciones') }}"><i class="fa fa-file-o" aria-hidden="true"></i> Mis evaluaciones</a>
+                                            <a class="dropdown-item" href="{{ url('evaluaciones') }}"><i class="fa fa-folder-open-o" aria-hidden="true"></i> Mis evaluaciones</a>
                                             <a class="dropdown-item" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mis compras</a>
                                             <!--Solo para los administradores del sistema-->
                                             <a class="dropdown-item" href="#"><i class="fa fa-tasks" aria-hidden="true"></i> Panel de Administración</a>                                                                                        
@@ -79,6 +79,23 @@
                                 @endif
 
 
+
+                                 @if(!Auth::check())
+                                    <li class="nav-item dropdown float-right mr-0 pr-0">
+                                        <a class="nav-link text-white pr-0" href="" id="" role="button" data-toggle="modal" data-target="#register">Registrarme / </a>
+                                        
+                                    </li>
+
+
+
+
+                                    <li class="nav-item dropdown float-right mr-3 pl-0">
+                                        <a class="nav-link text-white pl-0" href="" id="" role="button" data-toggle="modal" data-target="#login">&nbsp;Iniciar Sesión</a>
+                                        
+                                    </li>                                    
+                                @endif
+
+
                         </ul>   
                                          
                         <ul class="navbar-nav">
@@ -86,7 +103,7 @@
 
 
                                     <li class="nav-item ">
-                                        <a class="nav-link text-white" href="http://localhost/psycotestpro/public/comofunciona">¿Como funciona?</a>
+                                        <a class="nav-link text-white" href="{{ url('comofunciona')}}">¿Cómo funciona?</a>
                                     </li>
 
                                     <li class="nav-item dropdown float-right">
@@ -137,7 +154,7 @@
 
 
 <!-- Footer -->
-<footer class="page-footer font-small negro pt-4">
+<footer class="page-footer font-small negro pt-4 stickyy">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -193,16 +210,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="https://www.facebook.com/psycotestpro">Facebook</a>
+            <a href="https://www.facebook.com/psycotestpro"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
           </li>
           <li>
-            <a href="#!">Instagram</a>
+            <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
           </li>
           <li>
-            <a href="#!">Whatsapp</a>
+            <a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>
           </li>
           <li>
-            <a href="#!">Youtube</a>
+            <a href="#!"><i class="fa fa-youtube" aria-hidden="true"></i> Youtube</a>
           </li>
         </ul>
 

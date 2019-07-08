@@ -139,6 +139,11 @@
 
 
 
+.stickyy
+{
+  position: sticky;
+}
+
 
 
 /* The side navigation menu */
@@ -162,7 +167,7 @@
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #4CAF50;
+  background-color: #227dc7;
   color: white;
 }
 
@@ -176,7 +181,10 @@
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
+  overflow-y: scroll;
   height: 100%;
+
+
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

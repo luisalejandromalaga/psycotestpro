@@ -1,7 +1,7 @@
 @extends('header')
 
 @section('title')
-PSYCOTESTPRO
+Psycotestpro
 @endsection
 
 
@@ -39,8 +39,16 @@ Inicio
                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
                         <div class=" d-md-block  centered text-center">
                             <h2 class="d-none d-md-block text-white text-center mb-5">"Diseñamos, contruimos y sometemos a prueba tecnologías para la evaluación del comportamiento"</h2>
+
+
+
+                            @if(!Auth::check())
                             <button type="button" class="m-1 btn btn-primary btn-lg " data-toggle="modal" data-target="#register">Registrarme</button>
                             <button type="button" class="m-1 btn btn-primary btn-lg " data-toggle="modal" data-target="#login">Iniciar Sesión</button>
+                            @endif
+
+
+
                         </div>
                         <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
                             <div class="modal-dialog modal-dialog-centered" role="document">

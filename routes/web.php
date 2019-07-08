@@ -19,13 +19,15 @@ Route::get('formulario_cliente','HomeController@formulario_cliente')->name('form
 Route::post('post_informe','HomeController@post_informe')->name('post_informe');
 Route::get('post_informe','HomeController@post_informe')->name('post_informe');
 
-Route::get('tepsi', function () {   
-    return view('tepsi/tepsi');
-});
 
 
 Route::get('evaluaciones', function () {   
     return view('evaluaciones');
+});
+
+
+Route::get('informes', function () {   
+    return view('informes');
 });
 
 Route::get('comofunciona', function () {   
@@ -41,7 +43,19 @@ Route::get('contactanos', function () {
     return view('contactanos');
 });
 
+
+
+
+
+
+
 /*Vistas Tepsi*/
+
+
+Route::get('tepsi', function () {   
+    return view('tepsi/tepsi');
+});
+
 
 Route::get('tepsi/informeprevio','Pdf@precalculo')->name('informeprevio');
 
@@ -294,31 +308,5 @@ Route::get('tepsi/item50', function () {
 })->name('item50');
  
 
-
 /*end*/
-
-
-
-
-
-
-Route::get('tepsi/item1-7', function () {
-    return view('tepsi/item1-7');
-});
-
-
-Route::get('tepsi/item8-12', function () {
-    return view('tepsi/item8-12');
-});
-
-Route::get('tepsi/item1-2_leng', function () {
-    return view('tepsi/item1-2_leng');
-});
-
-
-Route::get('tepsi/item3-4_leng', function () {
-    return view('tepsi/item3-4_leng');
-});
-
-
 

@@ -1,30 +1,53 @@
 @extends('header')
 
+
+@section('title')
+TEPSI - Psycotestpro
+@endsection
+
+
+@section('index')
+TEPSI
+@endsection
+
 @section('content')
 <!--END HEADER-->
 
 <!--MENU-->
 
-<div>
 
-        <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-ficha-tab" data-toggle="tab" href="#nav-ficha" role="tab" aria-controls="nav-ficha" aria-selected="true">Ficha técnica</a>
 
-                        <a class="nav-item nav-link" id="nav-teoria-tab" data-toggle="tab" href="#nav-teoria" role="tab" aria-controls="nav-teoria" aria-selected="false">Sustento teórico</a>
 
-                        <a class="nav-item nav-link" id="nav-math-tab" data-toggle="tab" href="#nav-math" role="tab" aria-controls="nav-math" aria-selected="false">Confiabilidad y validez</a>
-                        
-                        <a class="nav-item nav-link" id="nav-adquirir-tab" data-toggle="tab" href="#nav-adquirir" role="tab" aria-controls="nav-adquirir" aria-selected="false">Adquirir evaluación</a>                             
-                        
-                        <a class="nav-item nav-link" id="nav-start-tab" data-toggle="tab" href="#nav-start" role="tab" aria-controls="nav-start" aria-selected="false">Empezar la evaluación</a>                                 
-                </div>
-                
-        </nav>
-                                
-        
-        <div class="tab-content" id="nav-tabContent">         
-                <div class="tab-pane fade show active" id="nav-ficha" role="tabpanel" aria-labelledby="nav-ficha-tab">
+<ul class="nav nav-pills mb-3 mt-1 ml-1 mr-1" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa fa-info-circle" aria-hidden="true"></i> Ficha técnica</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa fa-circle-o-notch" aria-hidden="true"></i> Sustento teórico</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Confiabilidad y validez</a>
+  </li>
+  <div class="ml-auto">
+      <li class="nav-item">
+          <a class="nav-link btn-success " href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir evaluación</a>
+      </li>
+  </div>
+  <div class="ml-2">
+      <li class="nav-item">
+          <a class="nav-link btn-primary " href="{{ url('tepsi/formulario') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
+      </li>
+  </div>
+</ul>
+
+
+<!--Contenido-->
+
+<div class="tab-content" id="pills-tabContent">
+
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      
+
                         <div class="card m-4">
                                 
                                 <div class="card-header">
@@ -82,21 +105,15 @@
                                     </div>
                                 </div>
                         </div>                        
-                </div>
+
+   </div>
 
 
-                <div class="tab-pane fade" id="nav-teoria" role="tabpanel" aria-labelledby="nav-teoria-tab">
-                        <Teoria />
-                </div>
 
-                                  
-
-                <div class="tab-pane fade" id="nav-math" role="tabpanel" aria-labelledby="nav-math-tab">
-                                  
-                </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      
 
 
-                <div class="tab-pane fade" id="nav-adquirir" role="tabpanel" aria-labelledby="nav-adquirir-tab">
 
 
 
@@ -192,9 +209,13 @@
 
                                 </div>
 
-                </div>
 
-                <div class="tab-pane fade" id="nav-start" role="tabpanel" aria-labelledby="nav-start-tab">
+
+  </div>
+
+
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      
 
 
                         <div>
@@ -249,11 +270,19 @@
                         </div>
 
 
-                </div>
-                                
-        </div>
 
+
+  </div>
 </div>
+<!--ENDContenido-->
+
+
+
+
+
+<!--antes de empezar--->
+
+
 
 <!--END MENU-->
 
