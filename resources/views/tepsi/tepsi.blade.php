@@ -30,12 +30,12 @@ TEPSI
   </li>
   <div class="ml-auto">
       <li class="nav-item">
-          <a class="nav-link btn-success " href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir evaluación</a>
+          <a class="nav-link btn-success " href="{{ url('tepsi/comprar') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir evaluación</a>
       </li>
   </div>
   <div class="ml-2">
       <li class="nav-item">
-          <a class="nav-link btn-primary " href="{{ url('tepsi/formulario') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
+          <a class="nav-link btn-primary " href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
       </li>
   </div>
 </ul>

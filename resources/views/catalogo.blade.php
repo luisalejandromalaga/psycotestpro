@@ -1,5 +1,14 @@
 @extends('header')
 
+@section('title')
+Catálogo - Psycotestpro
+@endsection
+
+
+@section('index')
+Catálogo
+@endsection
+
 @section('content')
 
 <!--CATALOGO-->
@@ -18,7 +27,19 @@
                             <h4 class="card-title">Test de desarrollo psicomotor (TEPSI)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="http://localhost/psycotestpro/public/tepsi"><h5 class=" m-1">Más información</h5></a></div>
+                        <div class="card-footer text-center ">
+
+                            <a class="btn btn-dark mb-1" href="{{ url('tepsi') }}">
+                                <h5 class=" m-1"><i class="fa fa-superpowers" aria-hidden="true"></i> Información técnica</h5>
+                            </a>
+
+                            <a class="btn btn-success mb-1 " href="{{ url('tepsi/comprar') }}">
+                               <h5 class=" m-1"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir evaluación </h5>
+                            </a>
+
+ 
+
+                        </div>
                     </div>
                     <div class="card  mb-3">
                         <div class="card-body">

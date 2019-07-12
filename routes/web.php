@@ -60,15 +60,25 @@ Route::get('tepsi', function () {
 Route::get('tepsi/informeprevio','Pdf@precalculo')->name('informeprevio');
 
 
-Route::get('tepsi/informe', function () {
-    return view('tepsi/informeprevio');
-})->name('informe');
+Route::get('tepsi/comprar', function () {   
+    return view('tepsi/comprar');
+});
+
+
 
 Route::get('tepsi/formulario', function () {
     return view('tepsi/formulario');
 })->name('formulario')->middleware('auth');;
 
-Route::get('tepsi/item1','HomeController@primera_t')->name('item1');
+
+
+Route::get('tepsi/informe', function () {
+    return view('tepsi/informeprevio');
+})->name('informe');
+
+
+
+Route::get('tepsi/item1','HomeController@primera_t')->name('item1')->middleware('auth');;
 
 Route::get('tepsi/item2', function () {
     return view('tepsi/item2');

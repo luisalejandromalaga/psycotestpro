@@ -80,7 +80,7 @@ Evaluaciones
 
                                <br>
 
-                               <a class="btn btn-success mb-1" href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir más</a>                           
+                               <a class="btn btn-success mb-1" href="{{ url('tepsi/comprar') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir más</a>                           
                             </div>
 
                         </div>
