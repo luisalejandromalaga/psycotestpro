@@ -21,249 +21,42 @@ Informes
   <a class="active" href="{{ url('informes') }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Informes</a>
 
 </div>
+<!--END Sidebar -->
 
 <!-- Page content -->
-<div class="content">
-                <h2 class="text-center mt-3">Mis informes</h2>
-                <hr >
-                <h4 class="text-center mb-3"></h4>
-
-                    
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <a class="btn btn-primary mb-1" href="{{ url('tepsi') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1"><i class="fa fa-cart-plus" aria-hidden="true"></i> Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1" ><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="card mb-3 text-center ">
-
-                        <div class="card-body  row mr-0  ml-0 border-left borderGrueso border-primary">
-
- 
-                            <div class="col-lg-4  ">
-                              <h4>Test de desarrollo psicomotor (TEPSI)</h4>
-                            </div>
-
-                            <div class="col-lg-4">
-                              <h5>Evaluaciones restantes</h5>
-
-                              <h2 class="text-center text-success">12 / 20</h2>
-                            </div>
-
-
-                            <div class="col-lg-4">
-                               <button class="btn btn-primary mb-1"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</button>                              
-                               <br>
-    
-                               <button class="btn btn-success mb-1">Adquirir evaluación</button>                             
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-
+<div class="contentB">
+
+
+      <table class="table table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombres y Apellidos</th>
+            <th scope="col">Evaluación</th>
+            <th scope="col">Informe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>EPQ</td>
+            <td><button class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>TEPSI</td>
+            <td><button class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>TEPSI</td>
+            <td><button class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
 
 
 </div>

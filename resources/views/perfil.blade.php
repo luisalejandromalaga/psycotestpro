@@ -1,12 +1,12 @@
 @extends('header')
 
 @section('title')
-Contacto - Psycotestpro
+Perfil - Psycotestpro
 @endsection
 
 
 @section('index')
-Contacto
+Perfil
 @endsection
 
 
@@ -23,7 +23,7 @@ Contacto
 
             <div class="container">
 
-                <h2 class="text-center mt-3">Contactanos</h2>
+                <h2 class="text-center mt-3">Perfil</h2>
                 <hr >
                 <h4 class="text-center mb-3">Deja un comentario</h4>
 

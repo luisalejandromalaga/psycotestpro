@@ -1,12 +1,12 @@
 @extends('header')
 
 @section('title')
-Catálogo - Psycotestpro
+Investigación - Psycotestpro
 @endsection
 
 
 @section('index')
-Catálogo
+Investigación
 @endsection
 
 @section('content')
@@ -17,9 +17,9 @@ Catálogo
 
             <div class="container">
 
-                <h2 class="text-center mt-3">Catálogo</h2>
+                <h2 class="text-center mt-3">Investigación</h2>
                 <hr >
-                <h4 class="text-center mb-3">Contamos con una grán cantidad de intrumentos de evaluacion a tu disposición</h4>
+                <h4 class="text-center mb-3">Soluciones para la recoleccion de datos</h4>
 
                 <div class="card-deck mb-3">
                     <div class="card mb-3">

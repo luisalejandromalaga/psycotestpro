@@ -51,7 +51,7 @@ Evaluaciones
 
                                <br>
 
-                               <a class="btn btn-dark mb-1" href="{{ url('tepsi') }}"><i class="fa fa-superpowers" aria-hidden="true"></i> Información técnica</a>   
+                               <a class="btn btn-dark mb-1" href="{{ url('tepsi') }}"><i class="fa fa-wrench" aria-hidden="true"></i></i> Información técnica</a>   
 
                             </div>
 
@@ -75,7 +75,7 @@ Evaluaciones
 
 
                             <div class="col-lg-4">
-                               <a class="btn btn-primary mb-1" href="{{ url('tepsi') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
+                               <a class="btn btn-primary mb-1" href="{{ url('tepsi/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
                               
 
                                <br>

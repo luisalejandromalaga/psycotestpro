@@ -68,7 +68,7 @@ Inicio
                             <h4 class="card-title">Test de desarrollo psicomotor (TEPSI)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="http://localhost/psycotestpro/public/tepsi" target="_blank"><h5 class=" m-1">Más información</h5></a></div>
+                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="{{ url('tepsi')}}" target="_blank"><h5 class=" m-1">Más información</h5></a></div>
                     </div>
                     <div class="card  mb-3">
                         <div class="card-body">
@@ -88,7 +88,7 @@ Inicio
 
 
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="http://localhost/psycotestpro/public/catalogo" target="_blank"><h5 class="m-1">Ver catálogo completo</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('comofunciona')}}" target="_blank"><h5 class="m-1">Ver catálogo completo</h5></a>           
                     </div>
 
 
@@ -113,12 +113,63 @@ Inicio
                         <p>Las tecnologías de la informacion, así como el desarrollo de dispositivos electronicos conectados a internet que registran datos del comportamiento son superiores al momento de presentar medidas mucho más detalladas y de calidad.</p>
                     </div>
                     <div class="col-lg-2  align-self-center text-center ">
-                        <a class="btn btn-outline-secondary m-1" href="http://localhost/psycotestpro/public/comofunciona" target="_blank"><h5 class="m-1">Aprender más</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('comofunciona')}}" target="_blank"><h5 class="m-1">Aprender más</h5></a>           
                     </div> 
                 </div>
             </div>
 
 <!--END Como funciona-->
+
+
+<!--Para investigacion-->
+            <div class="container mb-5">
+
+                <h2 class="text-center mt-3">Soluciones empresariales</h2>
+                <hr >
+
+
+                    <div class="">             
+                        <p>Debido al creciente interés de las empresas en la incorporación de las ciencias del comportamiento como parte sus políticas de gestión, se hace necesario por medir las variables comportamentales claves y de esta manera logar gestionarlas.  </p>
+                    </div>
+                    <div class="row justify-content-center mb-5">
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('empresas')}}" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu empresa</h5></a>           
+                    </div>
+
+
+
+            </div>
+
+<!--END investigacion-->
+
+
+
+
+<!--Para empresas-->
+            <div class="container mb-5">
+
+                <h2 class="text-center mt-3">Soluciones empresariales</h2>
+                <hr >
+
+
+                    <div class="">             
+                        <p>Debido al creciente interés de las empresas en la incorporación de las ciencias del comportamiento como parte sus políticas de gestión, se hace necesario por medir las variables comportamentales claves y de esta manera logar gestionarlas.  </p>
+                    </div>
+                    <div class="row justify-content-center mb-5">
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('empresas')}}" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu empresa</h5></a>           
+                    </div>
+
+
+
+            </div>
+
+<!--END Para empresas-->
+
+
+
+
+
+
+
 
 <!--Forma de pago-->
             <div class="container mb-5">
@@ -195,29 +246,15 @@ Inicio
                 </div>
 
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="http://localhost/psycotestpro/public/tepsi" target="_blank"><h5 class="m-1">Descubre más planes de pago y precios</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('pagos')}}" target="_blank"><h5 class="m-1">Descubre más planes de pago y precios</h5></a>           
                     </div>
 
 
             </div>
 <!--END Forma de pago-->
 
-<!--Para empresas-->
-            <div class="container mb-5">
-
-                <h2 class="text-center mt-3">Soluciones empresariales</h2>
-                <hr >
-
-
-                    <div class="">             
-                        <p>Debido al creciente interés de las empresas en la incorporación de las ciencias del comportamiento como parte sus políticas de gestión, se hace necesario por medir las variables comportamentales claves y de esta manera logar gestionarlas.  </p>
-                    </div>
-                    <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="http://localhost/psycotestpro/public/tepsi" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu empresa</h5></a>           
-                    </div>
 
 
 
-            </div>
 
 @endsection

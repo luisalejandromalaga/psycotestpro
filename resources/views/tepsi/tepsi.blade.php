@@ -35,7 +35,7 @@ TEPSI
   </div>
   <div class="ml-2">
       <li class="nav-item">
-          <a class="nav-link btn-primary " href=""><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
+          <a class="nav-link btn-primary " href="{{ url('tepsi/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
       </li>
   </div>
 </ul>
@@ -217,58 +217,21 @@ TEPSI
   <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
       
 
+          <div>
 
-                        <div>
-                            <div class="card m-4 text-center">
-                                
-                                <div class="card-header">
-                                        <h2>Antes de empezar</h2>
-                                </div>
+            Confiabilidad y validez
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
 
-                                <div class="card-body">
-                                    <div class="card-text">
-                                        <p>Asegúrate de tener todo lo que necesitas a mano</p>
-                                        <p>Si estás seguro de que tienes a mano todo lo que necesitas para realizar la evaluación presiona "Empezar la evaluación"</p>
-
-                                        <a class="btn btn-primary mb-3" href="{{route('formulario')}}" >
-                                         Empezar la evaluación
-                                        </a>
-
-                                        <p>Si quieres verificar tus materiales haz click en "Herramienta de verificación"</p>
-
-
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                                                Herramienta de verificación
-                                        </button>
-
-                                    </div>
-                                </div>
-
-
-                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                              <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                                                <div class="modal-content">
-                                                  <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">Herramienta de verificación</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                      <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                  </div>
-                                                  <div class="modal-body">
-                                                    
-                                                      verificación
-                                                    
-                                                  </div>
-                                                  <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                   </div>
-                        </div>
-
+                                   
+          </div>
 
 
 
