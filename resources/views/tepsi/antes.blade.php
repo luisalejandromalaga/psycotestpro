@@ -38,6 +38,7 @@
                                 <div class="card-body">
                                     <div class="card-text">
                                         <p>Asegúrate de tener todo lo que necesitas a mano</p>
+                                        <p>Esta es una versión digitalizada del clásico TEPSI, los ítems se encuentran automatizados en cuanto a su aplicación y calificación, pese a ello se necesitan algunos materias manipulables para poder desarrollar la evaluación. </p>
                                         <p>Si estás seguro de que tienes a mano todo lo que necesitas para realizar la evaluación presiona "Empezar la evaluación"</p>
 
                                         <a class="btn btn-primary mb-3" href="{{route('formulario')}}" >
@@ -66,13 +67,117 @@
                                                   </div>
                                                   <div class="modal-body">
                                                     
-                                                      verificación
-                                                    
+									                 <div class="row justify-content-center align-items-center">
+									                    <div class="col-lg-12">
+
+									                          <div id="carouselExampleControls" class="carousel slide mb-2" data-ride="carousel" data-interval="false">
+
+															<!--Slides del corrousel-->									                          	
+									                            <div class="carousel-inner ">
+										                              
+
+
+									                              <div class="carousel-item active">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_vasos.png')}}" />
+									                                <h4>Dos vasos</h4>				
+									                              </div>
+
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_cubos.png')}}" />
+ 									                                <h4>Doce cubos</h4> 
+									                              </div>
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_botonera.png')}}" />
+ 									                                <h4>Estuche con botones</h4> 
+									                              </div>
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_aguja.png')}}" />
+ 									                                <h4>Una aguja</h4> 
+									                              </div>
+
+
+
+								                              
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_nylon.png')}}" />
+ 									                                <h4>Hilo de nylon</h4> 
+									                              </div>	
+
+
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_tablero.png')}}" />
+ 									                                <h4>Tablero con ojetillos y cordón</h4> 
+									                              </div>
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_lapiz.png')}}" />
+ 									                                <h4>Lápiz sin goma de borrar</h4> 
+									                              </div>
+
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_hoja.png')}}" />
+ 									                                <h4>4 hojas bond</h4> 
+									                              </div>
+
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_barras.png')}}" />
+ 									                                <h4>Tablero con cuatro barritas pegadas y tres barritas sueltas</h4> 
+									                              </div>
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_almohada.png')}}" />
+ 									                                <h4>Dos bolsas, una rellena de arena y otra rellena de esponja</h4> 
+									                              </div>
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_colores.png')}}" />
+ 									                                <h4>Papel lustre azul, amarillo y rojo</h4> 
+									                              </div>
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_pelota.png')}}" />
+ 									                                <h4>Pelota</h4> 
+									                              </div>
+
+									                              <div class="carousel-item ">
+									                                <img class="img-fluid m-3 p-1" alt="Third slide" src="{{asset('img/tepsi/img_globo.png')}}" />
+ 									                                <h4>Globo</h4> 
+									                              </div>
+
+									                            </div>
+
+
+
+	
+
+
+									                            </div>
+									                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+									                              <span class="carousel-control-prev-icono" aria-hidden="true"></span>
+									                              <span class="sr-only">Previous</span>
+									                            </a>
+									                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+									                              <span class="carousel-control-next-icono" aria-hidden="true"></span>
+									                              <span class="sr-only">Next</span>
+									                            </a>
+									                          </div>
+									                    </div>
+
+			                                                    
                                                   </div>
-                                                  <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                                  </div>
+                                                  
                                                 </div>
                                               </div>
                                             </div>

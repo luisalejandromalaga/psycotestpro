@@ -124,15 +124,15 @@ Inicio
 <!--Para investigacion-->
             <div class="container mb-5">
 
-                <h2 class="text-center mt-3">Soluciones empresariales</h2>
+                <h2 class="text-center mt-3">Para investigación</h2>
                 <hr >
 
 
                     <div class="">             
-                        <p>Debido al creciente interés de las empresas en la incorporación de las ciencias del comportamiento como parte sus políticas de gestión, se hace necesario por medir las variables comportamentales claves y de esta manera logar gestionarlas.  </p>
+                        <p>Puedes usar Psycotestpro para recolectar de manera rápida y eficiente grandes cantidades de datos para tu investigación. Tambien puedes exportar tu base de datos lista para analizar. Cáda test cuenta con especificaciónes técnicas que te facilitarán el analisis de tus datos. </p>
                     </div>
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="{{ url('empresas')}}" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu empresa</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('investigacion')}}" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu investigación</h5></a>           
                     </div>
 
 
