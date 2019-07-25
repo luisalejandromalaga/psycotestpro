@@ -32,7 +32,7 @@ TEPSI
   </div>
   <div class="ml-2">
       <li class="nav-item">
-          <a class="nav-link btn-primary " href="{{ url('tepsi/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
+          <a class="nav-link btn-primary pri" href="{{ url('tepsi/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Empezar evaluación</a>
       </li>
   </div>
 </ul>

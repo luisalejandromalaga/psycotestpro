@@ -11,9 +11,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta charset="utf-8">
 
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-
+<link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
 </head>
 
 <body>

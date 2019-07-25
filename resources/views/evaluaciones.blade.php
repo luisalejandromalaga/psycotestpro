@@ -17,7 +17,7 @@ Evaluaciones
 
 <!-- Sidebar -->
 <div class="sidebar">
-  <a class="active" href="{{ url('evaluaciones') }}"><i class="fa fa-files-o" aria-hidden="true"></i> Todas</a>
+  <a class="active pri" href="{{ url('evaluaciones') }}"><i class="fa fa-files-o" aria-hidden="true"></i> Todas</a>
   <a href="{{ url('informes') }}"><i class="fa fa-file-text-o" aria-hidden="true"></i> Informes</a>
 
 </div>
@@ -75,7 +75,7 @@ Evaluaciones
 
 
                             <div class="col-lg-4">
-                               <a class="btn btn-primary mb-1" href="{{ url('tepsi/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
+                               <a class="btn btn-primary mb-1 pri" href="{{ url('tepsi/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
                               
 
                                <br>

@@ -43,8 +43,8 @@ Inicio
 
 
                             @if(!Auth::check())
-                            <button type="button" class="m-1 btn btn-primary btn-lg " data-toggle="modal" data-target="#register">Registrarme</button>
-                            <button type="button" class="m-1 btn btn-primary btn-lg " data-toggle="modal" data-target="#login">Iniciar Sesión</button>
+                            <button type="button" class="m-1 btn btn-primary btn-lg pri" data-toggle="modal" data-target="#register">Registrarme</button>
+                            <button type="button" class="m-1 btn btn-primary btn-lg pri" data-toggle="modal" data-target="#login">Iniciar Sesión</button>
                             @endif
 
 
@@ -68,27 +68,27 @@ Inicio
                             <h4 class="card-title">Test de desarrollo psicomotor (TEPSI)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="{{ url('tepsi')}}" target="_blank"><h5 class=" m-1">Más información</h5></a></div>
+                        <div class="card-footer text-center "><a class="btn btn-primary p-1 pri" href="{{ url('tepsi')}}" ><h5 class=" m-1">Más información</h5></a></div>
                     </div>
                     <div class="card  mb-3">
                         <div class="card-body">
                             <h4 class="card-title">Escala de Autoevaluación de la Ansiedad de Zung (EAA)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="" target=""><h5 class=" m-1">Próximamente</h5></a></div>
+                        <div class="card-footer text-center "><a class="btn btn-primary p-1 pri" href="" target=""><h5 class=" m-1">Próximamente</h5></a></div>
                     </div>
                     <div class="card  mb-3">
                         <div class="card-body">
                             <h4 class="card-title">Test de Asociación Implícita (Quechua - Caucásico - Bueno - Malo)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href=""      target=""><h5 class="m-1">Próximamente</h5></a></div>
+                        <div class="card-footer text-center "><a class="btn btn-primary p-1 pri" href=""      target=""><h5 class="m-1">Próximamente</h5></a></div>
                     </div>
                 </div>
 
 
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="{{ url('comofunciona')}}" target="_blank"><h5 class="m-1">Ver catálogo completo</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('catalogo')}}" ><h5 class="m-1">Ver catálogo completo</h5></a>           
                     </div>
 
 
@@ -113,7 +113,7 @@ Inicio
                         <p>Las tecnologías de la informacion, así como el desarrollo de dispositivos electronicos conectados a internet que registran datos del comportamiento son superiores al momento de presentar medidas mucho más detalladas y de calidad.</p>
                     </div>
                     <div class="col-lg-2  align-self-center text-center ">
-                        <a class="btn btn-outline-secondary m-1" href="{{ url('comofunciona')}}" target="_blank"><h5 class="m-1">Aprender más</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('comofunciona')}}" ><h5 class="m-1">Aprender más</h5></a>           
                     </div> 
                 </div>
             </div>
@@ -132,7 +132,7 @@ Inicio
                         <p>Puedes usar Psycotestpro para recolectar de manera rápida y eficiente grandes cantidades de datos para tu investigación. Tambien puedes exportar tu base de datos lista para analizar. Cáda test cuenta con especificaciónes técnicas que te facilitarán el analisis de tus datos. </p>
                     </div>
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="{{ url('investigacion')}}" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu investigación</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('investigacion')}}" ><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu investigación</h5></a>           
                     </div>
 
 
@@ -182,7 +182,7 @@ Inicio
 
                 <div class="card-deck mb-3">
                     <div class="card mb-3 text-center ">
-                        <div class="card-body  border-top borderGrueso border-primary">
+                        <div class="card-body  border-top borderGrueso border-primary ">
                             <h4 class="card-title text-center">BÁSICO</h4>
                             <hr>
                             <p class="card-text text-center">Puedes elegir cualquier instrumento de evaluación de nuestro catálogo.</p>
@@ -195,7 +195,7 @@ Inicio
 
                             <h2 class="text-center text-success">S/ 19.90</h2>
 
-                            <button class="btn btn-primary ">
+                            <button class="btn btn-primary pri">
                                 Adquierelo ahora
                             </button>
 
@@ -217,7 +217,7 @@ Inicio
 
                             <h2 class="text-center text-success">S/ 39.90</h2>
 
-                            <button class="btn btn-primary ">
+                            <button class="btn btn-primary pri">
                                 Adquierelo ahora
                             </button>
 
@@ -237,7 +237,7 @@ Inicio
 
                             <h2 class="text-center text-success">S/ 59.90</h2>
 
-                            <button class="btn btn-primary ">
+                            <button class="btn btn-primary pri ">
                                 Adquierelo ahora
                             </button>
 
