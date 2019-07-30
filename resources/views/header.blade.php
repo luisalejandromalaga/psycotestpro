@@ -20,7 +20,7 @@
 
         <link rel="icon" type="image/png" href="{{asset('img/fav.png')}}">
   
-<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 </head>
 
 
@@ -303,20 +303,24 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">¿Como funciona?</a>
+            <a href="{{ url('comofunciona')}}">¿Como funciona?</a>
           </li>
           <li>
-            <a href="#!">Catálogo</a>
-          </li>
-          <li>
-            <a href="#!">Formas de pago</a>
-          </li>
-          <li>
-            <a href="#!">Para empresas</a>
+            <a href="{{ url('catalogo')}}">Catálogo</a>
           </li>
 
           <li>
-            <a href="#!">Contactanos</a>
+            <a href="{{ url('investigacion')}}">Para investigación</a>
+          </li>
+
+          <li>
+            <a href="{{ url('empresas')}}">Para empresas</a>
+          </li>
+          <li>
+            <a href="{{ url('pagos')}}">Formas de pago</a>
+          </li>
+          <li>
+            <a href="{{ url('contactanos')}}">Contactanos</a>
           </li>          
         </ul>
 
@@ -334,7 +338,7 @@
             <a href="https://www.facebook.com/psycotestpro"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
           </li>
           <li>
-            <a href="#!"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+            <a href="#!" class=""><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
           </li>
           <li>
             <a href="#!"><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</a>

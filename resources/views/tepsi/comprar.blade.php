@@ -49,12 +49,13 @@ Comprar
 
                     <form class="form-inline justify-content-center align-items-center" action="#" method="post">      
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
-                            <input class="form-control " type="text" id="numero" name="numero" value="0">
+                            <input class="form-control compraImp " type="text" id="numero" name="numero" value="0">
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
 
-                        <a class="btn btn-primary mt-3 text-white" id="calcular">Calcular precio</a>
+
                     </form>
 
+                    <a class="btn btn-primary mt-1 mb-3 text-white" id="calcular">Calcular precio</a>
 
                 </div>
 

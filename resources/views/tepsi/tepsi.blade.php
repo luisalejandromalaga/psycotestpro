@@ -212,7 +212,7 @@ TEPSI
 
 
                     <h5>Tabla 1. Composición de la muestra de estandarización por grupo de edad según sexo y nivel socioeconómico </h5>
-                    <table class="table text-center mb-5">
+                    <table class="table text-center mb-5 bg-white">
 
                       <thead>
                         <tr>
@@ -420,7 +420,7 @@ TEPSI
 
 
                     <h5>Tabla 2. Promedio de edad en meses de la muestra de estandarización total y por nivel socioeconómico </h5>
-                    <table class="table text-center mb-5">
+                    <table class="table text-center mb-5 bg-white">
 
                       <thead>
                         <tr>
@@ -678,7 +678,7 @@ TEPSI
 
 
                     <h5>Tabla 3. Distribución de la muestra de estandarización según nivel socioeconómico</h5>
-                    <table class="table text-center mb-5">
+                    <table class="table text-center mb-5 bg-white">
 
                       <thead>
                         <tr>
@@ -777,7 +777,7 @@ TEPSI
 
 
                     <h5>Tabla 4. Distribución en frecuencia y porcentaje del nivel ocupacional de los jefes de hogar según nivel socioeconómico</h5>
-                    <table class="table text-center mb-5">
+                    <table class="table text-center mb-5 bg-white">
 
                       <thead>
                         <tr>
@@ -894,7 +894,7 @@ TEPSI
 
 
                     <h5>Tabla 5. Distribución en frecuencia y porcentaje del nivel educacional de los jefes de hogar según nivel socioeconómico </h5>
-                    <table class="table text-center mb-5">
+                    <table class="table text-center mb-5 bg-white">
 
                       <thead>
                         <tr>
