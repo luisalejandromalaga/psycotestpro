@@ -49,12 +49,20 @@ Comprar
 
                     <form class="form-inline justify-content-center align-items-center" action="{{route('calcular_precio')}}" method="post">      @csrf
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
+<<<<<<< HEAD
                             <input class="form-control " type="text" id="numero" name="numero" value="{{$subtotal}}">
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
 
                         <button class="btn btn-primary mt-3 text-white"  type="submit">Calcular precio</button>
+=======
+                            <input class="form-control compraImp " type="text" id="numero" name="numero" value="0">
+                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
+
+
+>>>>>>> 56a2854cd6f65b799272158d43c60946c17e0954
                     </form>
 
+                    <a class="btn btn-primary mt-1 mb-3 text-white" id="calcular">Calcular precio</a>
 
                 </div>
 
