@@ -68,33 +68,27 @@ Inicio
                             <h4 class="card-title">Test de desarrollo psicomotor (TEPSI)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-<<<<<<< HEAD
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="{{ url('tepsi')}}" ><h5 class=" m-1">Más información</h5></a></div>
-=======
+
                         <div class="card-footer text-center  bg-white"><a class="btn btn-primary p-1 pri txt-1" href="{{ url('tepsi')}}" >Más información</a></div>
->>>>>>> 56a2854cd6f65b799272158d43c60946c17e0954
+
                     </div>
                     <div class="card  mb-3">
                         <div class="card-body">
                             <h4 class="card-title">Escala de Autoevaluación de la Ansiedad de Zung (EAA)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-<<<<<<< HEAD
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href="" ><h5 class=" m-1">Próximamente</h5></a></div>
-=======
+
                         <div class="card-footer text-center bg-white"><a class="btn btn-primary p-1 pri txt-1" href="" target="">Próximamente</a></div>
->>>>>>> 56a2854cd6f65b799272158d43c60946c17e0954
+
                     </div>
                     <div class="card  mb-3">
                         <div class="card-body">
                             <h4 class="card-title">Test de Asociación Implícita (Quechua - Caucásico - Bueno - Malo)</h4>
                             <p class="card-text">El TEPSI es una prueba de tamizaje que sirve para obtener información sobre el desarrollo del niño comparándolo con otros de su mismo grupo poblacional.</p>
                         </div>
-<<<<<<< HEAD
-                        <div class="card-footer text-center "><a class="btn btn-primary p-1" href=""  ><h5 class="m-1">Próximamente</h5></a></div>
-=======
+
                         <div class="card-footer text-center  bg-white"><a class="btn btn-primary p-1 pri txt-1" href=""      target="">Próximamente</a></div>
->>>>>>> 56a2854cd6f65b799272158d43c60946c17e0954
+
                     </div>
                 </div>
 
