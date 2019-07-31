@@ -24,6 +24,17 @@ class HomeController extends Controller
         $res =\Session::get('respuestas');
         return view('pdf',compact($res));
     }
+    public function informes(){
+        $id_user =Auth::user()->id;
+        $tipo_test = App\Tipo_test::get();
+        $var = App\Tests::where('id_user',$id_user)->get();
+        $paciente = App\Paciente::get();
+        foreach ($var as $key) {
+            $key->id_tipo_test = $tipo_test[$key->id_tipo_test]->titulo;
+            $key->id_cliente = $paciente[$key->id_cliente]->nombre; 
+        }
+        return view('informes',compact('var'));
+    }
     public function index()
     {
         return view('index');

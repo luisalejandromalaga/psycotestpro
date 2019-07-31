@@ -33,18 +33,11 @@ Route::get('perfil', function () {
     return view('perfil');
 });
 
-Route::get('evaluaciones', function () {   
-    return view('evaluaciones');
-});
+Route::get('evaluaciones','CompraController@evaluaciones')->name('evaluaciones');
 
+Route::get('informes', 'HomeController@informes')->name('informes');
 
-Route::get('informes', function () {   
-    return view('informes');
-});
-
-Route::get('compras', function () {   
-    return view('compras');
-});
+Route::get('compras','CompraController@miscompras')->name('compras');
 
 
 Route::get('comofunciona', function () {   
@@ -90,11 +83,11 @@ Route::get('tepsi/antes', function () {
 });
 
 
-Route::get('tepsi/comprar', function () {   
-    return view('tepsi/comprar');
-});
+Route::get('tepsi/comprar','CompraController@vistacomprar')->name('compratepsi');
 
-
+Route::post('calcular','CompraController@calcular_total')->name('calcular_precio');
+//Route::get('calcular','CompraController@calcular_total')->name('calcular_precio');
+Route::post('subir_voucher','CompraController@subir_voucher')->name('subir_voucher');
 Route::get('tepsi/formulario', function () {
     return view('tepsi/formulario');
 })->name('formulario')->middleware('auth');;

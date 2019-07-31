@@ -5,7 +5,7 @@ require_once 'includes/auth_validate.php';
 
 
 // Sanitize if you want
-$pagos_id = filter_input(INPUT_GET, 'pagos_id', FILTER_VALIDATE_INT);
+$pagos_id = filter_input(INPUT_GET, 'pago_id', FILTER_VALIDATE_INT);
 $operation = filter_input(INPUT_GET, 'operation',FILTER_SANITIZE_STRING); 
 ($operation == 'edit') ? $edit = true : $edit = false;
 
@@ -14,7 +14,7 @@ $operation = filter_input(INPUT_GET, 'operation',FILTER_SANITIZE_STRING);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
     //Get pagos id form query string parameter.
-    $pagos_id = filter_input(INPUT_GET, 'pagos_id', FILTER_SANITIZE_STRING);
+    $pagos_id = filter_input(INPUT_GET, 'pago_id', FILTER_SANITIZE_STRING);
 
     //Get input data
     $data_to_update = filter_input_array(INPUT_POST);
@@ -59,7 +59,7 @@ if($edit)
         
         <?php
             //Include the common form for add and edit  
-            require_once('./includes/forms/product_form.php'); 
+            require_once('./includes/forms/pagos_form.php'); 
         ?>
     </form>
 </div>

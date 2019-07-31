@@ -9,7 +9,7 @@
     </div>
     <div class="form-group">
         <label for="name">Imagen</label>
-            <img src="../../vouchers/<?php echo $pagos['voucher']; ?>">
+            <img src="../vouchers/<?php echo $pagos['voucher']; ?>">
     </div>
     <div class="form-group">
         <label for="name">Estado</label>

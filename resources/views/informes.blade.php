@@ -37,24 +37,15 @@ Informes
           </tr>
         </thead>
         <tbody>
+          @foreach($var as $informe)
           <tr>
             <th scope="row">1</th>
-            <td>Mark</td>
-            <td>EPQ</td>
-            <td><button class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>
+            <td>{{$informe->id_paciente}}</td>
+            <td>{{$informe->id_tipo_test}}</td>
+            <td><a href="{{$informe->pdf}}" class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>TEPSI</td>
-            <td><button class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>TEPSI</td>
-            <td><button class="btn btn-success"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>
-          </tr>
+         
+          @endforeach
         </tbody>
       </table>
 

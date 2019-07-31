@@ -25,9 +25,6 @@ Compras
 
                 <h2 class="text-center mt-3">Mis compras</h2>
 
-
-
-
                     <table class="table table-hover">
                       <thead class="thead-light">
                         <tr>
@@ -39,27 +36,25 @@ Compras
                         </tr>
                       </thead>
                       <tbody>
+                        @php
+                          $cont = 0;
+                        @endphp
+                        @foreach($pagos as $pa)
+
                         <tr>
-                          <th scope="row">1</th>
-                          <td>EPQ</td>
-                          <td>S/ 21.00</td>
-                          <td class="text-danger">En espera de validación</td>
-                          <td><button class="btn btn-primary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>                          
+                          <th scope="row">{{++$cont}}</th>
+                          <td>{{$pa->id_tipo_test}}</td>
+                          <td>S/ {{$pa->precio}}</td>
+                          @if($pa->estado == 'SIn validar')
+                          <td class="text-danger">{{$pa->estado}}</td>
+                          @else
+                          <td class="text-success">{{$pa->estado}}</td>
+                          @endif
+                          <td><a href="vouchers/{{$pa->voucher}}" target="blank" class="btn btn-primary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a></td>                          
                         </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>TEPSI</td>
-                          <td>S/ 21.00</td>
-                          <td class="text-success">Validado</td>
-                          <td><button class="btn btn-primary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>                            
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>EAA ZUNG</td>
-                          <td>S/ 21.00</td>
-                          <td class="text-success">Validado</td>
-                          <td><button class="btn btn-primary"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></td>                            
-                        </tr>
+                        @endforeach
+                        
+                        
                       </tbody>
                     </table>
 
@@ -71,4 +66,4 @@ Compras
 
 
 
-@endsection
+@endsection 

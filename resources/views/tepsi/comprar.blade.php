@@ -47,12 +47,12 @@ Comprar
 
 
 
-                    <form class="form-inline justify-content-center align-items-center" action="#" method="post">      
+                    <form class="form-inline justify-content-center align-items-center" action="{{route('calcular_precio')}}" method="post">      @csrf
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
-                            <input class="form-control " type="text" id="numero" name="numero" value="0">
+                            <input class="form-control " type="text" id="numero" name="numero" value="{{$subtotal}}">
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
 
-                        <a class="btn btn-primary mt-3 text-white" id="calcular">Calcular precio</a>
+                        <button class="btn btn-primary mt-3 text-white"  type="submit">Calcular precio</button>
                     </form>
 
 
@@ -60,7 +60,7 @@ Comprar
 
                 <div class="col-lg-4">
                     <h3>Precio a pagar:</h3>
-                    <span class="h3 text-primary">S/ </span><span class="h3 text-primary" id="precio">0.00</span>
+                    <span class="h3 text-primary">S/ </span><span class="h3 text-primary" id="precio">{{$total}}</span>
                 </div>
             </div>
             <hr>
@@ -69,12 +69,17 @@ Comprar
                     <h2 class="text-primary">Paso 2:</h2>
                     <h3 class="text-primary">Adjunta tu comprobante</h3>
                     <div class=" row justify-content-center text-center">
-                        <form method="post" class="" action="#" id="#">
-     
-                            <input type="file" class="btn btn-success mb-3 " multiple="">
+                        <form method="post" class="" action="{{route('subir_voucher')}}" id="#" enctype="multipart/form-data">
+                             @csrf
+                            <select class="mdb-select md-form" name="tipo_test">
+                              <option value="" disabled selected>Choose your option</option>
+                              <option value="1">tepsi</option>
+                              
+                            </select>
+                            <input type="file" class="btn btn-success mb-3 " name="voucher" multiple="">
                             <br>
 
-                            <button class="btn btn-primary ">Comprar</button>
+                            <button type="submit" class="btn btn-primary ">Comprar</button>
                                                         
                         </form>
                     </div>
@@ -140,16 +145,7 @@ Comprar
     }
 
 
-    function calcular() {
-
-        var numero = i;
-        var precio = document.getElementById("precio");
-
-        var total = i*1.1;
-
-        precio.innerHTML = total.toFixed(2); 
-    }
-
+    
 
 
 </script>
