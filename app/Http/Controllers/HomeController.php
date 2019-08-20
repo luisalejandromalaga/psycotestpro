@@ -11,7 +11,7 @@ class HomeController extends Controller
 
     public function __construct()
     {
-         $this->middleware('auth');
+         //$this->middleware('auth');
          if(!\Session::has('respuestas')) \Session::put('respuestas',array());
          
     }
@@ -23,6 +23,21 @@ class HomeController extends Controller
     public function pdf(){
         $res =\Session::get('respuestas');
         return view('pdf',compact($res));
+    }
+    public function catalogo(){
+
+         $tests = App\Tipo_test::get();
+         return view('catalogo',compact('tests'));
+    }
+    public function catalogopost(Request $request){
+
+         $nombre = $request->input('search');
+         $tests = App\Tipo_test::where('url',$nombre)->get();
+         $array = array(    
+            "busqueda"=> $nombre,
+        );
+        App\Busqueda::insert($array);
+         return view('catalogo',compact('tests'));
     }
     public function informes(){
         $id_user =Auth::user()->id;

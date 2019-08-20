@@ -4,16 +4,16 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Tipo_test extends Model
+class Busqueda extends Model
 {
     //
-    protected $table = 'tipo_test';
-    protected $primaryKey ='id_tipo_test';
+    protected $table = 'busqueda';
+    protected $primaryKey ='id_busqueda';
     public $timestamps = false;
     protected $fillable = [
-    	'titulo',
-    	'descripcion',
-    	'url'
+        'nombre',
+        'busqueda',
+        'fecha'
     ];
     protected $guarded = [
     ];

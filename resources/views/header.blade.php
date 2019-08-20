@@ -44,8 +44,9 @@
 
 
 
-                            <form class="form-inline my-2 my-lg-0 mr-3">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Busca un test" aria-label="Search">
+                            <form class="form-inline my-2 my-lg-0 mr-3 "  method="POST" action="{{route('catalogo')}}">
+                                @csrf
+                                <input class="form-control mr-sm-2" type="search" placeholder="Busca un test" aria-label="Search" name="search">
                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
                             </form>
                                  @if(Auth::check())
@@ -159,8 +160,9 @@
 
 
 
-                            <form class="form-inline my-2 my-lg-0 mr-3">
-                                <input class="form-control mr-sm-2" type="search" placeholder="Busca un test" aria-label="Search">
+                            <form class="form-inline my-2 my-lg-0 mr-3" method="POST" action="{{route('catalogo')}}">
+                                @csrf   
+                                <input class="form-control mr-sm-2" type="search" placeholder="Busca un test" aria-label="Search" name="search">
                                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
                             </form>
                                  @if(Auth::check())

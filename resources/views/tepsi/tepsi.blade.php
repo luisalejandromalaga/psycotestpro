@@ -27,7 +27,7 @@ TEPSI
   </li>
   <div class="ml-auto">
       <li class="nav-item">
-          <a class="nav-link btn-success " href="{{ url('tepsi/comprar') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir evaluación</a>
+          <a class="nav-link btn-success " href="{{ url('comprar/tepsi') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir evaluación</a>
       </li>
   </div>
   <div class="ml-2">

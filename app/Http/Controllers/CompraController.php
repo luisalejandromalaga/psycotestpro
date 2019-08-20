@@ -19,13 +19,46 @@ class CompraController extends Controller
    public function calcular_total(Request $request){
   
 		$cantidad = $request->input('numero');
+      $test = $request->input('name_test');
 	   	\Session::put('total_dinero',$cantidad);
-	   	return redirect()->route('compratepsi'); 
+	   	return redirect()->route('compratepsi',$test); 
    }
-   public function vistacomprar(){
+   public function vistacomprar($test = 0){
+
    		$subtotal =\Session::get('total_dinero');
-   		$total = $subtotal*1.1;
-   		return view('tepsi/comprar',compact('total','subtotal'));
+   	   $total = $subtotal*1.1;
+        
+         $tests = DB::table('tipo_test')->where('url',$test)->get();
+         
+   		return view('comprar',compact('total','subtotal','tests'));
+   }
+   public function formulario(){
+      $id_user =Auth::user()->id;
+         
+      $tipo_test =App\Tipo_test::get();
+         //print_r($tipo_test[0]->titulo);
+     
+      $var = App\Tests::where('id_user',$id_user)->where('id_tipo_test','1')->count();
+      $pa = App\Pagos::where('id_user',$id_user)->where('id_tipo_test','1')->where('estado','Validado')->get();
+      $sum_comprados= 0;
+      
+      foreach ($pa as $val) {
+               $sum_comprados +=$val->n_tests_comprados;
+            
+           
+            
+      } 
+      $total=$sum_comprados-$var ;
+      $this->middleware('auth');
+
+      if($total > 0){
+         return view('tepsi/formulario');
+      }
+      else
+      {
+         return redirect()->route('compratepsi','tepsi');
+      }
+
    }
    public function subir_voucher(Request $request){
    		$subtotal =\Session::get('total_dinero');
@@ -70,14 +103,14 @@ class CompraController extends Controller
    }
    public function evaluaciones(){
    		$id_user =Auth::user()->id;
-   		$pagos =DB::table('pagos')->where('id_user',$id_user)->get();
+   		
    		$tipo_test =App\Tipo_test::get();
    		//print_r($tipo_test[0]->titulo);
    		$array = array();
    		$arraytotal = array();
    		foreach ($tipo_test as $key) {
    			$var = App\Tests::where('id_user',$id_user)->where('id_tipo_test',$key->id_tipo_test)->count();
-   			$pa = App\Pagos::where('id_user',$id_user)->where('id_tipo_test',$key->id_tipo_test)->get();
+   			$pa = App\Pagos::where('id_user',$id_user)->where('id_tipo_test',$key->id_tipo_test)->where('estado','Validado')->get();
    			$sum_comprados= 0;
    			foreach ($pa as $val) {
    				$sum_comprados +=$val->n_tests_comprados;

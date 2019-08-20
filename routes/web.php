@@ -1,12 +1,9 @@
 <?php
 
 
-Route::get('/', function () {
-    return view('index');
-});
 
 Auth::routes();
-
+Route::get('/', 'HomeController@index')->name('index');
 Route::get('/index', 'HomeController@index')->name('index');
 Route::get('/home', 'HomeController@home')->name('home');
 Route::post('post_res','HomeController@post_res')->name('post_res');
@@ -20,9 +17,8 @@ Route::post('post_informe','HomeController@post_informe')->name('post_informe');
 Route::get('post_informe','HomeController@post_informe')->name('post_informe');
 
 
-
 //Admin
-Route::get('adm', function () {   
+Route::get('adm', function () {
     return view('adm');
 });
 //
@@ -44,10 +40,8 @@ Route::get('comofunciona', function () {
     return view('comofunciona');
 });
 
-Route::get('catalogo', function () {   
-    return view('catalogo');
-});
-
+Route::get('catalogo','HomeController@catalogo')->name('catalogo');
+Route::post('catalogo','HomeController@catalogopost')->name('catalogo');
 Route::get('investigacion', function () {   
     return view('investigacion');
 });
@@ -63,34 +57,23 @@ Route::get('pagos', function () {
 Route::get('contactanos', function () {   
     return view('contactanos');
 });
-
-
-
-
-
-
+Route::get('comprar/{test}','CompraController@vistacomprar')->name('compratepsi');
 
 /*Vistas Tepsi*/
-
-
 
 Route::get('tepsi', function () {   
     return view('tepsi/tepsi');
 });
 
 Route::get('tepsi/antes', function () {   
-    return view('tepsi/antes');
+    return view('tepsi/antes'); 
 });
-
-
-Route::get('tepsi/comprar','CompraController@vistacomprar')->name('compratepsi');
 
 Route::post('calcular','CompraController@calcular_total')->name('calcular_precio');
 //Route::get('calcular','CompraController@calcular_total')->name('calcular_precio');
 Route::post('subir_voucher','CompraController@subir_voucher')->name('subir_voucher');
-Route::get('tepsi/formulario', function () {
-    return view('tepsi/formulario');
-})->name('formulario')->middleware('auth');;
+Route::get('tepsi/formulario', 'CompraController@formulario')->name('formulario');
+    
 
 Route::get('tepsi/informeprevio','Pdf@precalculo')->name('informeprevio');
 

@@ -34,7 +34,7 @@ Evaluaciones
          <div class="col-lg-4  ">
             <h4>{{$tt->titulo}}</h4>
             <br>
-            <a class="btn btn-dark mb-1" href="{{ url($tt->titulo) }}"><i class="fa fa-wrench" aria-hidden="true"></i></i> Información técnica</a>   
+            <a class="btn btn-dark mb-1" href="{{ url($tt->url) }}"><i class="fa fa-wrench" aria-hidden="true"></i></i> Información técnica</a>   
          </div>
          <div class="col-lg-4">
             <h5>Evaluaciones realizadas:</h5>
@@ -44,9 +44,9 @@ Evaluaciones
             <h2 class="text-center text-success">{{$array[$c]}} </h2>
          </div>
          <div class="col-lg-4">
-            <a class="btn btn-primary mb-1 pri" href="{{ url($tt->titulo.'/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
+            <a class="btn btn-primary mb-1 pri" href="{{ url($tt->url.'/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
             <br>
-            <a class="btn btn-success mb-1" href="{{ url($tt->titulo.'/comprar') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir más</a>                           
+            <a class="btn btn-success mb-1" href="{{ url('comprar/'.$tt->url) }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir más</a>                           
          </div>
       </div>
    </div>
