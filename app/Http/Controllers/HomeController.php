@@ -138,15 +138,15 @@ class HomeController extends Controller
                     $res[$id]  = 0;
                  $nombreitem =$nombreitem.($id+1);
                  break;
-             case 47:
+             case 49:
                  if($respuesta > 2)
                     $res[$id]  = 1;
                  else
                     $res[$id]  = 0;
                  $nombreitem =$nombreitem.($id+1);
                  break; 
-              case 49:
-              case 50:
+              case 51:
+              case 52:
                  if($respuesta > 3)
                     $res[$id]  = 1;
                  else
@@ -156,7 +156,7 @@ class HomeController extends Controller
                  
                  break; 
              case 42:
-             case 45:
+             case 47:
                  if($respuesta > 5)
                     $res[$id]  = 1;
                  else
@@ -171,11 +171,22 @@ class HomeController extends Controller
                  $nombreitem =$nombreitem.($id+1);
                  break;
              case 44:
-                 if($respuesta > 9)
-                    $res[$id]  = 1;
-                 else
-                    $res[$id]  = 0;
-                 $nombreitem =$nombreitem.($id+1);
+                 if($respuesta > 9){
+                    $res[$id] = 1;
+                    $res[$id+1] = 1;
+                    $res[$id+2] = 1;
+                 }
+                 else if($respuesta > 4 && $respuesta < 10 ){
+                    $res[$id] = 0;
+                    $res[$id+1] = 1;
+                    $res[$id+2] = 1;
+                 }
+                 else if($respuesta < 5){
+                    $res[$id] = 0;
+                    $res[$id+1] = 0;
+                    $res[$id+2] = 1;
+                 }
+                 $nombreitem =$nombreitem.($id+3);
                  break;
              case 13:
                  $nombreitem =$nombreitem.($id+3);
@@ -204,9 +215,10 @@ class HomeController extends Controller
                  break;
          }
          \Session::put('respuestas',$res);
-         if($id == 50)
+         if($id == 52)
+
             return redirect()->route('informeprevio');
-         return redirect()->route($nombreitem);
+        return redirect()->route($nombreitem);
     }
 
     public function post_options(Request $request){

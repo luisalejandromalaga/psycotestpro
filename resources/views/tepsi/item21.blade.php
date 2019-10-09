@@ -51,7 +51,7 @@
 
                             <div class="col ">                           
                               <div class="custom-control custom-checkbox mr-sm-2">
-                                <input type="checkbox" class="custom-control-input" name="opt-1" id="chico">
+                                <input type="checkbox" class="custom-control-input" name="opt-2" id="chico">
                                 <label class="custom-control-label" for="chico">Corto</label>
                               </div>
                             </div>

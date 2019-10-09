@@ -18,7 +18,6 @@
 
         <!-- Styles -->
         <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
 
 </head>
 
@@ -30,7 +29,7 @@
 
     <div class="card mt-3 mb-3">
       <div class="card-header">
-        <h4 class="" id="">Camina hacia atrás topando punta talón</h4>
+        <h4 class="" id="">Coge una pelota</h4>
       </div>
       <div class="card-body text-center p-2 ">
                  <div class="row justify-content-center align-items-center">
@@ -41,15 +40,15 @@
                     <div class="col-lg-5 align-self-center">
                                         
                         <div class="row-fluid rounded-sm border mb-2">
-                            <h4>Materiales:</h4> <p>-</p>
+                            <h4>Materiales:</h4> <p>Pelota</p>
                         </div>
 
                         <div class="row-fluid rounded-sm border mb-2">
-                            <h4>Ubicación:</h4> <p>Examinador al lado del niño</p>
+                            <h4>Ubicación:</h4> <p>Examinador de pie frente al niño a un metro de distancia</p>
                         </div>
 
                         <div class="row-fluid rounded-sm border mb-2">
-                             <h4>Administración:</h4> <p>El examinado camina en línea recta hacia atrás colocando el pie de manera que en cada paso la punta toque el talón del otro pie (se "chusea hacia atrás") Deben darse 4 o más pasos. Luego motiva al niño a hacer lo mismo diciéndole: <strong class="text-danger">"Camina igual que yo"</strong>.</p>
+                             <h4>Administración:</h4> <p>El examinador mostrando la pelota al niño dice: <strong class="text-danger">"Juguemos a la pelota, yo te la tiro y tú la pescas"</strong>, enseguida se coloca a un metro de distancia del niño y le tira la pelota dándole un bote para que llegue entre la cintura y el cuello. Se puede repetir una vez.</p>
                         </div>
 
                     </div>
@@ -68,17 +67,26 @@
                     <div class="col-lg-5">
 
                         <div class="row-fluid rounded-sm border mb-1">
-                            <h4>Criterio de aprobación:</h4>
+                            <h4>Criterio de aprobación:</h4> <p>Si el niño coge la pelota con una o con las dos manos. Debe cogerla con las manos no con los brazos.</p>
 
-                            <p class="mb-1">Si el niño camina hacia atrás 4 o más pasos en línea recta sin apoyo tocando la punta con el talón.</p>
-                                <div class="text-center">
-                                  <form  method="post" action="{{ route('post_numero') }}">
-                                    @csrf
-                                    <input type="hidden" name="id" value="50">
-                                    <input class="form-inp mb-1" name="numero" type="search" placeholder="Número de pasos" aria-label="Search">
-                                    <button class="btn btn-primary mb-1" type="submit">Calificar</button>
-                                  </form>
-                                </div>
+                            <div class="btn-group btn-group-toggle mb-2" >
+                                 <form  method="post" action="{{ route('post_res') }}">
+                                         @csrf
+                                        <input type="hidden" name="id" value="50">
+                                        <input type="hidden" name="res" value="1">
+                                        <button class="btn btn-success" type="submit" value="Logrado" /> 
+                                        Logrado
+                                        </button>
+                                
+                                </form>
+                                 <form action="{{ route('post_res') }}" method="post">
+                                         @csrf
+                                        <input type="hidden" name="id" value="50">
+                                        <input type="hidden" name="res" value="0">
+                                        <input class="btn btn-danger" type="submit" value="No logrado" name="options" id="option1" autocomplete="off" /> 
+                                
+                                </form>
+                            </div>
                         </div>
                     </div>
 

@@ -30,7 +30,7 @@
 
     <div class="card mt-3 mb-3">
       <div class="card-header">
-        <h4 class="" id="">Salta en un pie tres o más veces sin apoyo</h4>
+        <h4 class="" id="">Camina en punta de pies seis o más pasos </h4>
       </div>
       <div class="card-body text-center p-2 ">
                  <div class="row justify-content-center align-items-center">
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="row-fluid rounded-sm border mb-2">
-                             <h4>Administración:</h4> <p>El examinador salta en un pie por lo menos tres vece, en el mismo lugar. Luego incita al niño a hacer los mismo diciéndole: <strong class="text-danger">"Salta igual que yo"</strong>. El examinador debe registrar la cantidad de saltos que da el niño.</p>
+                             <h4>Administración:</h4> <p>El examinador camina en punta de pies mínimo seis pasos. Luego incita al niño a hacer lo mismo diciéndole: <strong class="text-danger">"Camina en la punta de los pies igual que yo"</strong>. El examinador registrar la cantidad de pasos que da el niño.</p>
                         </div>
 
                     </div>
@@ -70,12 +70,12 @@
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4>
 
-                            <p class="mb-1">Si el niño salta en un pie tres o más veces con o sin avance y sin apoyo.</p>
+                            <p class="mb-1">Si el niño camina en punta de pies seis o más pasos.</p>
                                 <div class="text-center">
                                   <form  method="post" action="{{ route('post_numero') }}">
                                     @csrf
                                     <input type="hidden" name="id" value="47">
-                                    <input class="form-inp mb-1" name="numero" type="search" placeholder="Número de saltos" aria-label="Search">
+                                    <input class="form-inp mb-1" name="numero" type="search" placeholder="Número de pasos" aria-label="Search">
                                     <button class="btn btn-primary mb-1" type="submit">Calificar</button>
                                   </form>
                                 </div>

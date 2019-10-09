@@ -20,6 +20,8 @@ class pdf extends Controller
 			$GLOBALS['edad_m']=floor(($dias_r%360)/30);
 	}
 	public function precalculo(){
+		//$id_user =Auth::user()->id;
+		//$pagos =DB::table('pagos')->where('id_user',$id_user)->get();
 		$res =\Session::get('respuestas');
 		
 		$informe = \Session::get('informe');
@@ -72,11 +74,11 @@ class pdf extends Controller
 			        		}
 		        			
 		        	}
-		        	return $motricidad;
+		        	//return $motricidad;
 		         $coordinacion_b =$coordinacion;
 		         $lenguaje_b =$lenguaje ;
 		         $motricidad_b = $motricidad;
-		         
+		         //print_r($res);
 
 		         //calcular 2 a 2,6
 		         if($edad_y==2 && $edad_m <6){
@@ -245,6 +247,7 @@ class pdf extends Controller
 		       $array_r[6]=$motricidad_b;
 		       $array_r[7]=$motricidad;
 		       $array_r[8]= $motricidad_t;
+		       
 		       return view('tepsi/informeprevio', compact('array_r'));
 	}
 
@@ -496,6 +499,8 @@ class pdf extends Controller
 		$pdf->SetFont('Arial','',12); 
 		$pdf->Cell(0,10,utf8_decode($observacion),0,1);
 		$pdf->SetFont('Arial','B',12); 
+		$pdf->AddPage();
+		
 		$pdf->Cell(0,10,'Resultados obtenidos:',0,1);
 
 		$pdf->SetFont('Arial','B',10); 
@@ -603,7 +608,8 @@ class pdf extends Controller
 		//$pdf->Cell(0,10,'Fecha de Informe:'.$y.'-'.$m.'-'.$d.'-',0,1);
 
 
-		$pdf->Output();
+		$pdf->Output('resultados.pdf','F');
+		return redirect('resultados.pdf');
 		exit;
     }
 }

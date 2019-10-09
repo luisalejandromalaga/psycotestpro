@@ -294,16 +294,6 @@ Route::get('tepsi/item44', function () {
 })->name('item44');
  
 
-Route::get('tepsi/item45', function () {
-    return view('tepsi/item45');
-})->name('item45');
- 
-
-Route::get('tepsi/item46', function () {
-    return view('tepsi/item46');
-})->name('item46');
- 
-
 Route::get('tepsi/item47', function () {
     return view('tepsi/item47');
 })->name('item47');
@@ -322,6 +312,16 @@ Route::get('tepsi/item49', function () {
 Route::get('tepsi/item50', function () {
     return view('tepsi/item50');
 })->name('item50');
+ 
+
+Route::get('tepsi/item51', function () {
+    return view('tepsi/item51');
+})->name('item51');
+ 
+
+Route::get('tepsi/item52', function () {
+    return view('tepsi/item52');
+})->name('item52');
  
 
 /*end*/

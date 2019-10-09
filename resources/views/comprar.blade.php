@@ -52,7 +52,7 @@ Comprar
 
 
                             
-                            <input type="hidden" name="name_test" value="{{$tests[0]->descripcion}}">
+                            <input type="hidden" name="name_test" value="{{$tests[0]->url}}">
                             <input class="form-control compraImp " type="text" id="numero" name="numero" value="{{$subtotal}}">
                         <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
                         

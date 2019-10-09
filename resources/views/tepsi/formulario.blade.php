@@ -139,7 +139,7 @@
 
             <div class="form-group col-md-4">
               <label for="inputEmail4">Nombre de la madre</label>
-              <input type="text" class="form-control" name="padre" id="padre" placeholder="Nombre del padre">
+              <input type="text" class="form-control" name="madre" id="madre" placeholder="Nombre de la madre">
             </div>
 
 

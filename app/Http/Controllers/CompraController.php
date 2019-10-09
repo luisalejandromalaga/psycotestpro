@@ -21,6 +21,7 @@ class CompraController extends Controller
 		$cantidad = $request->input('numero');
       $test = $request->input('name_test');
 	   	\Session::put('total_dinero',$cantidad);
+         //return $test;
 	   	return redirect()->route('compratepsi',$test); 
    }
    public function vistacomprar($test = 0){
@@ -65,7 +66,7 @@ class CompraController extends Controller
    		//$total = DB::select('select count(*) from pagos');
    		$total = App\Pagos::count();
    		//rankana\Pagos::insert($array); 
-   	    $ruta = public_path().'/vouchers/';
+   	   $ruta = public_path().'/vouchers/';
    		$imagenOriginal =$request->file('voucher');
    		$imagen = Image::make($imagenOriginal->getRealPath());
    		//print_r( $imagenOriginal);

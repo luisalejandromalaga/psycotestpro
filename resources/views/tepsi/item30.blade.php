@@ -73,11 +73,11 @@
                                   <input class="form-carr mb-1" type="text"  name="text-1">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success" href="#carouselExampleControls" role="button" data-slide="next">
-                                         <input type="radio" name="options-1" value="1"  /> Logrado
+                                         <input type="radio" name="options-2" value="1"  /> Logrado
                                       </label>
 
                                       <label class="btn btn-danger"  href="#carouselExampleControls" role="button" data-slide="next">
-                                         <input type="radio" name="options-1" value="0" /> No logrado
+                                         <input type="radio" name="options-2" value="0" /> No logrado
                                       </label>
                                   </div>
                                 </div>   
@@ -92,11 +92,11 @@
                                   <input class="form-carr mb-1" type="text"  name="text-1">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success" href="#carouselExampleControls" role="button" data-slide="next">
-                                         <input type="radio" name="options-1" value="1"  /> Logrado
+                                         <input type="radio" name="options-3" value="1"  /> Logrado
                                       </label>
 
                                       <label class="btn btn-danger"  href="#carouselExampleControls" role="button" data-slide="next">
-                                         <input type="radio" name="options-1" value="0" /> No logrado
+                                         <input type="radio" name="options-3" value="0" /> No logrado
                                       </label>
                                   </div>
                                 </div>   
