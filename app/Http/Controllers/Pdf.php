@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use App\FPDF;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Auth;
 class pdf extends Controller 
 {
 	public function calcular_edad($fecha_n){
@@ -247,7 +249,7 @@ class pdf extends Controller
 		       $array_r[6]=$motricidad_b;
 		       $array_r[7]=$motricidad;
 		       $array_r[8]= $motricidad_t;
-		       
+		      
 		       return view('tepsi/informeprevio', compact('array_r'));
 	}
 
@@ -607,9 +609,37 @@ class pdf extends Controller
 		$pdf->Line(38,240,100,240);
 		//$pdf->Cell(0,10,'Fecha de Informe:'.$y.'-'.$m.'-'.$d.'-',0,1);
 
+		print_r(implode(",", $res));
+		array_pop($datos);
+		$dni = $datos['dni'];
+		$bool = DB::table('paciente')->where('dni', $dni)->first();
+		if($bool==""){
+			DB::table('paciente')->insert($datos);
 
-		$pdf->Output('resultados.pdf','F');
-		return redirect('resultados.pdf');
+		}
+		else{
+			DB::table('paciente')
+            		->where('id', $bool->id)
+            		->update($datos);
+			//print_r($bool->id);
+		}
+		$max = DB::table('tests')->count();
+		$max_pas = DB::table('paciente')->count();
+		$id_pac=$max_pas;
+		if($bool!=""){
+			$id_pac=$bool->id;
+		}
+		$array_test = array(
+		    "id_paciente" => $id_pac,
+		    "id_user" => Auth::user()->id,
+		    "id_tipo_test" => 1,
+		    "pdf"=> ("resultados_".($max+1).".pdf"),
+		    "respuestas" => implode(",", $res),
+		);
+		DB::table('tests')->insert($array_test);
+		
+		$pdf->Output("resultados_".($max+1).".pdf",'F');
+		return redirect("resultados_".($max+1).".pdf");
 		exit;
     }
 }
