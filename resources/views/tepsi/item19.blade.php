@@ -1,33 +1,13 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
-
-<head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
-
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
-
-        <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>        
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
+@section('title')
+TEPSI | Item 17/47
+@endsection
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-</head>
-
-<body>
-
+@section('content')
 
 <div class="container">
 
@@ -48,7 +28,7 @@
                             <div class="carousel-inner">
                               <div class="carousel-item active">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/gato.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-1">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success" href="#carouselExampleControls" role="button" data-slide="next">
@@ -67,7 +47,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/perro.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-2">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -86,7 +66,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/cerdo.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-3">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -104,7 +84,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/pato.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-4">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -125,7 +105,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/paloma.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-5">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -145,7 +125,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/oveja.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-6">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -164,7 +144,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/tortuga.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-7">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -183,7 +163,7 @@
 
                               <div class="carousel-item">
                                 <img class="img-fluid m-1 p-1" alt="Third slide" src="{{asset('img/tepsi/laminas/gallina.png')}}" />
-                                <div data-toggle="tooltip" data-placement="bottom" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
+                                <div data-toggle="tooltip" data-placement="left" title="Anota la respuesta del niño y califícala antes de pasar al siguiente animal">
                                   <input class="form-carr mb-1" type="text"  name="text-8">
                                   <div class="btn-group btn-group-toggle mb-1" data-toggle="buttons">
                                       <label class="btn btn-success"  href="#carouselExampleControls" role="button" data-slide="next">
@@ -270,6 +250,4 @@
   });
 </script>
 
-</body>
-
-</html>
+@endsection

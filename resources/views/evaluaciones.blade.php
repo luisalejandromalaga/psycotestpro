@@ -18,19 +18,21 @@ Evaluaciones
 <div class="content">
    <h2 class="text-center mt-3">Mis evaluaciones</h2>
    <hr >
-   <div class="">
+
+   <!--<div class="">
       <form class="form-inline my-2 my-lg-0 ">
          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
       </form>
-   </div>
+   </div>-->
+   
    <h4 class="text-center mb-3"></h4>
    @php
    $c = 0;
    @endphp
    @foreach($tipo_test as $tt)
-   <div class="card mb-3 text-center ">
-      <div class="card-body  row mr-0  ml-0  border-left borderGrueso border-primary justify-content-center align-items-center">
+   <div class="card mb-3 text-center borderIzq">
+      <div class="card-body  row mr-0  ml-0   justify-content-center align-items-center">
          <div class="col-lg-4  ">
             <h4>{{$tt->titulo}}</h4>
             <br>
@@ -44,7 +46,7 @@ Evaluaciones
             <h2 class="text-center text-success">{{$array[$c]}} </h2>
          </div>
          <div class="col-lg-4">
-            <a class="btn btn-primary mb-1 pri" href="{{ url($tt->url.'/antes') }}"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
+            <a class="btn btn-primary mb-1 pri" href="{{ url($tt->url.'/antes') }}" target="_blank"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nueva evaluación</a>                              
             <br>
             <a class="btn btn-success mb-1" href="{{ url('comprar/'.$tt->url) }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Adquirir más</a>                           
          </div>

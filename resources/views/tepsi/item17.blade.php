@@ -1,34 +1,13 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
+@section('title')
+TEPSI | Item 15/47
+@endsection
 
-<head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
-
-        <!-- Scripts -->
-        <script src="{{asset('js/app.js')}}"></script>
-
-        <!-- Scripts para Hacer el panel de indicaciones, ver porque no son compatibles       
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  -->        
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">        
-
-</head>
-
-<body>
-
+@section('content')
 
 <div class="container">
 
@@ -129,6 +108,4 @@
   });
 </script>
 
-</body>
-
-</html>
+@endsection

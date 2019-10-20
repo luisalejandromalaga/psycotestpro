@@ -30,7 +30,7 @@ Comprar
 
             <div class="row">
                 <div class="col-lg-12">
-                 <h2 class="text-primary">Paso 1:</h2>
+                 <h2 class="text-primary">Paso 12:</h2>
                  <h3 class="text-primary">Selecciona el número de evaluaciones que deseas adquirir</h3>
                  <br>
                 </div>
@@ -48,20 +48,25 @@ Comprar
 
 
                     <form class="form-inline justify-content-center align-items-center" action="{{route('calcular_precio')}}" method="post">      @csrf
-                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
-
-
-                       
-
-                            <input class="form-control compraImp " type="text" id="numero" name="numero" value="{{$subtotal}}">
-                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
                         
-                        <button class="btn btn-primary mt-1 mb-3 text-white"  type="submit">Calcular precio</button>
+
+                        <div class="row">
+
+                            <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                         
+                            
+                            <input class="form-control compraImp " type="text" id="numero" name="numero" value="{{$subtotal}}">
+
+                            <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                        </div>  
+
+                        <div class="row">
+                            <button class="btn btn-primary mt-1 mb-3 text-white"  type="submit">Calcular precio</button>
+                        </div>
 
                     </form>
 
                   
-
                 </div>
 
                 <div class="col-lg-4">

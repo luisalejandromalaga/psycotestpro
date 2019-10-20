@@ -1,27 +1,13 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
+@section('title')
+TEPSI | Item 11/47
+@endsection
 
-<head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
-
-        <!-- Scripts -->
-       
-           <script src="{{asset('js/app.js')}}"></script>
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-
-</head>
-
-<body>
+@section('content')
 
 
 <div class="container">
@@ -78,7 +64,7 @@
                                          @csrf
                                         <input type="hidden" name="id" value="11">
                                         <input type="hidden" name="res" value="1">
-                                        <button class="btn btn-success" type="submit" value="Logrado" /> 
+                                        <button class="btn btn-success m-1" type="submit" value="Logrado" /> 
                                         Logrado
                                         </button>
                                 
@@ -87,7 +73,7 @@
                                          @csrf
                                         <input type="hidden" name="id" value="11">
                                         <input type="hidden" name="res" value="0">
-                                        <input class="btn btn-danger" type="submit" value="No logrado" name="options" id="option1" autocomplete="off" /> 
+                                        <input class="btn btn-danger m-1" type="submit" value="No logrado" name="options" id="option1" autocomplete="off" /> 
                                 
                                 </form>
                             </div>
@@ -126,8 +112,4 @@
 
 </div>
 
-</br>
-
-</body>
-
-</html>
+@endsection

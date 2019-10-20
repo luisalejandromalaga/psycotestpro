@@ -1,7 +1,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="fav.png" type="image/x-icon">
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
 
@@ -59,7 +59,7 @@
                                             <a class="dropdown-item" href="{{ url('compras') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mis compras <!--<span class="badge badge-pill badge-info text-white">1</span>--></a>
                                             
                                             <!--Solo para los administradores del sistema-->
-                                            <a class="dropdown-item" href="{{ url('adm') }}"><i class="fa fa-tasks" aria-hidden="true"></i> Panel de Administración</a>                                                                                        
+                                            <!--<a class="dropdown-item" href="{{ url('adm') }}"><i class="fa fa-tasks" aria-hidden="true"></i> Panel de Administración</a> -->                                                                                       
                                             <div class="dropdown-divider">
                                             </div>
                                             <a class="dropdown-item" href="{{ route('logout') }}"
@@ -175,7 +175,7 @@
                                             <a class="dropdown-item" href="{{ url('compras') }}"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Mis compras <!--<span class="badge badge-pill badge-info text-white">1</span>--></a>
                                             
                                             <!--Solo para los administradores del sistema-->
-                                            <a class="dropdown-item" href="{{ url('adm') }}"><i class="fa fa-tasks" aria-hidden="true"></i> Panel de Administración</a>                                                                                        
+                                            <!--<a class="dropdown-item" href="{{ url('adm') }}"><i class="fa fa-tasks" aria-hidden="true"></i> Panel de Administración</a> -->                                                                                              
                                             <div class="dropdown-divider">
                                             </div>
                                             <a class="dropdown-item" href="{{ route('logout') }}"
@@ -399,7 +399,7 @@
                                                         <form method="POST" action="{{ route('login') }}">
                                                             @csrf
                                                             <div class="form-group row">
-                                                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                                                <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo electrónico') }}</label>
 
                                                                 <div class="col-md-6">
                                                                     <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
@@ -413,7 +413,7 @@
                                                             </div>
 
                                                             <div class="form-group row">
-                                                                <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                                                                <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                                                                 <div class="col-md-6">
                                                                     <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -432,7 +432,7 @@
                                                                         <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                                                         <label class="form-check-label" for="remember">
-                                                                            {{ __('Remember Me') }}
+                                                                            {{ __('Recordarme') }}
                                                                         </label>
                                                                     </div>
                                                                 </div>
@@ -441,12 +441,12 @@
                                                             <div class="form-group row mb-0">
                                                                 <div class="col-md-8 offset-md-4">
                                                                     <button type="submit" class="btn btn-primary">
-                                                                        {{ __('Login') }}
+                                                                        {{ __('Entrar') }}
                                                                     </button>
 
                                                                     @if (Route::has('password.request'))
                                                                         <a class="btn btn-link" href="{{ route('password.request') }}">
-                                                                            {{ __('Forgot Your Password?') }}
+                                                                            {{ __('¿Olvidaste tu contraseña?') }}
                                                                         </a>
                                                                     @endif
                                                                 </div>
@@ -483,7 +483,7 @@
                                                                 @csrf
 
                                                                 <div class="form-group row">
-                                                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                                                                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nombre') }}</label>
 
                                                                     <div class="col-md-6">
                                                                         <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
@@ -497,7 +497,7 @@
                                                                 </div>
 
                                                                 <div class="form-group row">
-                                                                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                                                                    <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo electrónico') }}</label>
 
                                                                     <div class="col-md-6">
                                                                         <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
@@ -511,7 +511,7 @@
                                                                 </div>
 
                                                                 <div class="form-group row">
-                                                                    <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
+                                                                    <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Contraseña') }}</label>
 
                                                                     <div class="col-md-6">
                                                                         <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
@@ -525,7 +525,7 @@
                                                                 </div>
 
                                                                 <div class="form-group row">
-                                                                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
+                                                                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirmar contraseña') }}</label>
 
                                                                     <div class="col-md-6">
                                                                         <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -535,7 +535,7 @@
                                                                 <div class="form-group row mb-0">
                                                                     <div class="col-md-6 offset-md-4">
                                                                         <button type="submit" class="btn btn-primary">
-                                                                            {{ __('Register') }}
+                                                                            {{ __('Registrarme') }}
                                                                         </button>
                                                                     </div>
                                                                 </div>

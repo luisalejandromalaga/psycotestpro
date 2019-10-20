@@ -13,55 +13,29 @@ Inicio
 <!--CATALOGOphp store-->
 
 
-            <div class="container-fluid">
-                <div class="row rownoticia">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            
-                            <div class="carousel-item">
-                                <img class="d-block w-100   imgnoticia" src="img/banner_uno.png" alt="First slide">
-                            </div>
+<div class="bgdark  text-right ">
 
-                            <div class="carousel-item active">
-                                <img class="d-block w-100 imgnoticia" src="img/banner_dos.png" alt="Second slide">
-                            </div>
+            <img class="dataimg" src="{{asset('img/new.svg')}}">
 
-                            <div class="carousel-item">
-                                <img class="d-block w-100 imgnoticia" src="img/2259.png" alt="Third slide">
-                            </div>
+            <div class=" d-md-block  centered text-center">
+                 <h1 class=" d-md-block text-white text-center mb-5"><strong>PSYCOTESTPRO</strong></h1>
+                 <h2 class="d-none d-md-block text-white text-center mb-5">"Diseñamos, contruimos y sometemos a prueba tecnologías para la evaluación del comportamiento"</h2>
+                 @if(!Auth::check())
+                 <button type="button" class="m-1 btn btn-primary btn-lg sec" data-toggle="modal" data-target="#register">Registrarme</button>
+                 <button type="button" class="m-1 btn btn-primary btn-lg sec" data-toggle="modal" data-target="#login">Iniciar Sesión</button>
+                 @endif
 
-                        </div>
-
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-                        <div class=" d-md-block  centered text-center">
-                            <h2 class="d-none d-md-block text-white text-center mb-5">"Diseñamos, contruimos y sometemos a prueba tecnologías para la evaluación del comportamiento"</h2>
-
-
-
-                            @if(!Auth::check())
-                            <button type="button" class="m-1 btn btn-primary btn-lg pri" data-toggle="modal" data-target="#register">Registrarme</button>
-                            <button type="button" class="m-1 btn btn-primary btn-lg pri" data-toggle="modal" data-target="#login">Iniciar Sesión</button>
-                            @endif
-
-
-
-                        </div>
-                    
-
-
-
-                    </div>
-                </div>
             </div>
-            
-            <div class="container">
+</div>
+<!------------>
 
-                <h2 class="text-center mt-3">Muestra del catálogo</h2>
+
+            <div class="container">
+            <div>
+
+                <div> <h2 class="text-center mt-3">Muestra del catálogo</h2>
                 <hr >
+                </div>
                 <div class="card-deck mb-3">
                     <div class="card mb-3">
                         <div class="card-body">
@@ -101,7 +75,7 @@ Inicio
 
                     
 
-
+            </div>
             </div>
 
 
@@ -136,7 +110,7 @@ Inicio
                 <div class="row justify-content-center align-items-center ">
                    
                     <div class="col-lg-3 text-center mb-3">
-                        <img src="img/investigar.png" class="investigar ">
+                        <img src="{{asset('img/investigar.png')}}" class="investigar ">
                     </div>
 
                     <div class="txt-1 col-lg-9">             
@@ -171,7 +145,7 @@ Inicio
                         <p>Debido al creciente interés de las empresas en la incorporación de las ciencias del comportamiento como parte sus políticas de gestión, se hace necesario por medir las variables comportamentales claves y de esta manera logar gestionarlas.  </p>
                     </div>
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="{{ url('empresas')}}" target="_blank"><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu empresa</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('empresas')}}" ><h5 class="m-1">Descubre otras maneras de emplear Psycotestpro en tu empresa</h5></a>           
                     </div>
 
 
@@ -197,8 +171,8 @@ Inicio
 
 
                 <div class="card-deck mb-3">
-                    <div class="card mb-3 text-center ">
-                        <div class="card-body  border-top borderGrueso border-primary ">
+                    <div class="card mb-3 text-center borderGrueso">
+                        <div class="card-body  ">
                             <h4 class="card-title text-center">BÁSICO</h4>
                             <hr>
                             <p class="card-text text-center">Puedes elegir cualquier instrumento de evaluación de nuestro catálogo.</p>
@@ -212,14 +186,14 @@ Inicio
                             <h2 class="text-center text-success">S/ 19.90</h2>
 
                             <button class="btn btn-primary pri">
-                                Adquierelo ahora
+                                Próximamente<!--Adquierelo ahora-->
                             </button>
 
                         </div>
                     </div>
                     
-                    <div class="card mb-3 text-center ">
-                        <div class="card-body  border-top borderGrueso border-primary">
+                    <div class="card mb-3 text-center borderGrueso">
+                        <div class="card-body">
                             <h4 class="card-title text-center">PROFESIONAL</h4>
                             <hr>
                             <p class="card-text text-center">Puedes elegir cualquier instrumento de evaluación de nuestro catálogo.</p>
@@ -234,13 +208,13 @@ Inicio
                             <h2 class="text-center text-success">S/ 39.90</h2>
 
                             <button class="btn btn-primary pri">
-                                Adquierelo ahora
+                                Próximamente<!--Adquierelo ahora-->
                             </button>
 
                         </div>
                     </div>
-                    <div class="card mb-3 text-center ">
-                        <div class="card-body  border-top borderGrueso border-primary">
+                    <div class="card mb-3 text-center borderGrueso">
+                        <div class="card-body ">
                             <h4 class="card-title text-center">PREMIUM</h4>
                             <hr>
                             <p class="card-text text-center">Puedes elegir cualquier instrumento de evaluación de nuestro catálogo.</p>
@@ -254,7 +228,7 @@ Inicio
                             <h2 class="text-center text-success">S/ 59.90</h2>
 
                             <button class="btn btn-primary pri ">
-                                Adquierelo ahora
+                                Próximamente<!--Adquierelo ahora-->
                             </button>
 
                         </div>
@@ -262,7 +236,7 @@ Inicio
                 </div>
 
                     <div class="row justify-content-center mb-5">
-                        <a class="btn btn-outline-secondary m-1" href="{{ url('pagos')}}" target="_blank"><h5 class="m-1">Descubre más planes de pago y precios</h5></a>           
+                        <a class="btn btn-outline-secondary m-1" href="{{ url('pagos')}}"><h5 class="m-1">Descubre más planes de pago y precios</h5></a>           
                     </div>
 
 

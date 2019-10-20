@@ -1,27 +1,13 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
+@section('title')
+TEPSI | Item 3/47
+@endsection
 
-<head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
 
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
 
-        <!-- Scripts -->
-        <script src="{{ asset('/js/app.js') }}" defer></script>
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
-</head>
-
-<body>
+@section('content')
 
 
 <div class="container">
@@ -90,6 +76,4 @@
 
 
 
-</body>
-
-</html>
+@endsection

@@ -1,30 +1,13 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
-
-<head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
-
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
-
-        <!-- Scripts -->
-        
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
+@section('title')
+TEPSI | Item 28/47
+@endsection
 
 
 
-</head>
+@section('content')
 
-<body>
 
 
 <div class="container">
@@ -95,12 +78,12 @@
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4> <p class="m-1">Si el niño nombra correctamente al menos dos colores.</p>
 
-                            <div class="btn-group btn-group-toggle mb-2" type = "submit " data-toggle="buttons">
-                                <button class="btn btn-success" type="submit" name="options" value="1" /> 
+                            <div class="btn-group-toggle mb-2" type = "submit " data-toggle="buttons">
+                                <button class="btn btn-success m-1" type="submit" name="options" value="1" /> 
                                         Logrado
                                 </button>
 
-                                <button class="btn btn-danger" type="submit" name="options" value="0" /> 
+                                <button class="btn btn-danger m-1" type="submit" name="options" value="0" /> 
                                         No logrado
                                 </button>
                             </div>
@@ -126,6 +109,4 @@
   });
 </script>
 
-</body>
-
-</html>
+@endsection

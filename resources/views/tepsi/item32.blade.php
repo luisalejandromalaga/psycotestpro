@@ -1,31 +1,12 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
-
-<head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
-
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
-
-        <!-- Scripts -->
-            
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
+@section('title')
+TEPSI | Item 29/47
+@endsection
 
 
-
-</head>
-
-<body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+@section('content')
 
 <div class="container">
 
@@ -125,6 +106,4 @@
   });
 </script>
 
-</body>
-
-</html>
+@section('content')

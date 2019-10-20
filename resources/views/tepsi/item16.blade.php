@@ -1,27 +1,13 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
+@section('title')
+TEPSI | Item 14/47
+@endsection
 
-<head>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
 
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
 
-        <!-- Scripts -->
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-
-</head>
-
-<body>
-
+@section('content')
 
 <div class="container">
 
@@ -66,14 +52,14 @@
                     <div class="col-lg-5">
 
                         <div class="row-fluid rounded-sm border mb-1">
-                            <h4>Criterio de aprobación:</h4> <p>ESi el niño ordena las barritas por tamaño insertándolas en los huecos previstos en el tablero o bien las coloca en orden de tamaño sobre las barras del tablero.</p>
+                            <h4>Criterio de aprobación:</h4> <p>Si el niño ordena las barritas por tamaño insertándolas en los huecos previstos en el tablero o bien las coloca en orden de tamaño sobre las barras del tablero.</p>
 
                             <div class="btn-group btn-group-toggle mb-2" data-toggle="buttons">
                                 <form  method="post" action="{{ route('post_res') }}">
                                          @csrf
                                         <input type="hidden" name="id" value="16">
                                         <input type="hidden" name="res" value="1">
-                                        <button class="btn btn-success" type="submit" value="Logrado" /> 
+                                        <button class="btn btn-success m-1" type="submit" value="Logrado" /> 
                                         Logrado
                                         </button>
                                 
@@ -82,7 +68,7 @@
                                          @csrf
                                         <input type="hidden" name="id" value="16">
                                         <input type="hidden" name="res" value="0">
-                                        <input class="btn btn-danger" type="submit" value="No logrado" name="options" id="option1" autocomplete="off" /> 
+                                        <input class="btn btn-danger m-1" type="submit" value="No logrado" name="options" id="option1" autocomplete="off" /> 
                                 
                                 </form>
                             </div>
@@ -95,6 +81,4 @@
 </div>
 
 
-</body>
-
-</html>
+@endsection

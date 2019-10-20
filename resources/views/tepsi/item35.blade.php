@@ -1,34 +1,12 @@
-<!DOCTYPE html>
+@extends('tepsi')
 
-<html>
-
-<head>
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TEPSI | PSYCOTESTPRO</title>
-
-        <link rel="icon" href="fav.png" type="image/x-icon" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta charset="utf-8">
-
-        <!-- Scripts -->
-         <script src="{{ asset('/js/app.js') }}" defer></script>
-
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>        
-        
-        <!-- Fonts -->
-
-        <!-- Styles -->
-        <link rel="stylesheet" type="text/css" href="{{asset('css/app.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/estilos.css')}}">
+@section('title')
+TEPSI | Item 32/47
+@endsection
 
 
-
-</head>
-
-<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+@section('content')
 
 
 <div class="container">
@@ -166,7 +144,7 @@
                          
                     </div>            
                     <div class="col-lg-5">
-<
+
                         <div class="row-fluid rounded-sm border mb-1">
                             <h4>Criterio de aprobación:</h4> <p class="m-1">Si el niño nombra al menos dos acciones y cuatro sustantivos o,</p>
                                 <p class="m-1">Si el niño nombra al menos cuatro acciones y dos sustantivos o,</p>
@@ -174,10 +152,10 @@
                                 
 
 
-                            <div class="btn-group btn-group-toggle mb-2" >
-                                <button class="btn btn-success" type="submit" name="options" value="1" /> Logrado </button>
+                            <div class="btn-group-toggle mb-2" >
+                                <button class="btn btn-success m-1" type="submit" name="options" value="1" /> Logrado </button>
 
-                                <button class="btn btn-danger" type="submit" name="options" value="0" />No logrado</button>
+                                <button class="btn btn-danger m-1" type="submit" name="options" value="0" />No logrado</button>
                             </div>
 
                         </div>
@@ -201,6 +179,4 @@
   });
 </script>
 
-</body>
-
-</html>
+@endsection

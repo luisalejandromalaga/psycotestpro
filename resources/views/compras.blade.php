@@ -15,13 +15,13 @@ Compras
 
 
 
-<body class="" style="">
+
  
 <!--CATALOGO-->
 
 
 
-            <div class="">
+            <div class="fheight">
 
                 <h2 class="text-center mt-3">Mis compras</h2>
 

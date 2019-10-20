@@ -30,9 +30,9 @@ Comprar
 
             <div class="row">
                 <div class="col-lg-12">
-                 <h2 class="text-primary">Paso 1:</h2>
-                 <h3 class="text-primary">Selecciona el número de evaluaciones que deseas adquirir</h3>
-                 <br>
+                     <h2 class="text-primary">Paso 1:</h2>
+                     <h3 class="text-primary">Selecciona el número de evaluaciones que deseas adquirir</h3>
+                     <br>
                 </div>
             </div>
 
@@ -43,23 +43,29 @@ Comprar
                 </div>
 
                 <div class="col-lg-4 ">
+
+
                     <h3>Cantidad:</h3>
 
 
 
                     <form class="form-inline justify-content-center align-items-center" action="{{route('calcular_precio')}}" method="post">      @csrf
-                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
-
-
-                            
-                            <input type="hidden" name="name_test" value="{{$tests[0]->url}}">
-                            <input class="form-control compraImp " type="text" id="numero" name="numero" value="{{$subtotal}}">
-                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
                         
+
+                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMenos" name="botonMenos"><i class="fa fa-minus" aria-hidden="true"></i></a>
+                                                
+                        <input type="hidden" name="name_test" value="{{$tests[0]->url}}">
+                        <input class="form-control compraImp " type="text" id="numero" name="numero" value="{{$subtotal}}">
+                        
+                        <a class="btn btn-dark text-white ml-2 mr-2" type="" id="botonMas" name="botonMas"><i class="fa fa-plus" aria-hidden="true"></i></a>
+
+      
+
+
                         <button class="btn btn-primary mt-1 mb-3 text-white"  type="submit">Calcular precio</button>
 
-                    </form>
 
+                    </form>
                   
 
                 </div>
@@ -73,12 +79,48 @@ Comprar
             <div class="row ">
                 <div class="col-lg-12 ">
                     <h2 class="text-primary">Paso 2:</h2>
+                    <h3 class="text-primary">Deposita el monto indicado al número de cuenta</h3>
+                    <div class=" row justify-content-center text-center">
+                                    <div class="">
+
+                                        <img class="card-img-tope mt-3  align-self-center" src="{{asset('img/interbank.svg')}}" alt="Card image cap"/>
+                                        
+                                        <div class="card-body text-center">
+          
+                                            <hr>
+                             
+                                            <h4 class="card-text">Número de cuenta:</h4>
+                                            <h4>4623146167698</h4>
+
+                                            <!--<hr>
+
+                                                                <form method="post" action="#" id="#">
+     
+                                                                    <input type="file" class="" multiple="">
+                                                                    <hr>
+                                                                    <button class="btn btn-primary">Enviar comprobante</button>                                                        
+                                            </form>-->
+               
+                                        </div>
+                                        
+                                    </div>                        
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+
+
+            <div class="row ">
+                <div class="col-lg-12 ">
+                    <h2 class="text-primary">Paso 3:</h2>
                     <h3 class="text-primary">Adjunta tu comprobante</h3>
                     <div class=" row justify-content-center text-center">
                         <form method="post" class="" action="{{route('subir_voucher')}}" id="#" enctype="multipart/form-data">
                              @csrf
                             <input type="hidden" name="tipo_test" value="{{$tests[0]->id_tipo_test}}">
-                            <input type="file" class="btn btn-success mb-3 " name="voucher" multiple="">
+                            <input type="file" id="subidor"  name="voucher" multiple="">
+                            <label for="subidor">Click para adjuntar tu comprobante</label>
                             <br>
 
                             <button type="submit" class="btn btn-primary ">Comprar</button>
@@ -87,6 +129,9 @@ Comprar
                     </div>
                 </div>
             </div>
+
+
+
         </div>
 
     </div>
@@ -95,6 +140,8 @@ Comprar
 
    
 <!--ENDContenido-->
+
+
 
 
 
