@@ -34,6 +34,7 @@ TEPSI | Informe previo
     </tr>
   </thead>
   <tbody>
+    
     <tr>
       <th scope="row">Coordinación</th>
       <td>{{$array_r[0]}}</td>
@@ -52,6 +53,14 @@ TEPSI | Informe previo
       <td>{{$array_r[7]}}</td>
       <td>{{$array_r[8]}}</td>
     </tr>
+
+    <tr>
+      <th scope="row">Test total</th>
+      <td>asd</td>
+      <td>asd</td>
+      <td>asd</td>
+    </tr>
+    
   </tbody>
 </table>
 

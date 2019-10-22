@@ -54,9 +54,22 @@ Route::get('pagos', function () {
     return view('pagos');
 });
 
+
+/*Contacto*/
+
 Route::get('contactanos', function () {   
     return view('contactanos');
 });
+
+
+Route::post('contactanos','contactoController@store')->name('contactanos');
+
+
+
+/*ENDContacto*/
+
+
+
 Route::get('comprar/{test}','CompraController@vistacomprar')->name('compratepsi');
 
 /*Vistas Tepsi*/

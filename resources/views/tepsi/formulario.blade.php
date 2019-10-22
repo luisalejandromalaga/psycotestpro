@@ -68,13 +68,13 @@ TEPSI | Datos del evaluado
 
             <div class="form-group col-md-4">
               <label for="inputEmail4">Nivel de estudios</label>
-              <input required type="tel" class="form-control" name="estudios" id="estudios" placeholder="Documento de identidad">
+              <input required type="tel" class="form-control" name="estudios" id="estudios" placeholder="Nivel de estudios">
             </div>
 
 
             <div class="form-group col-md-4">
               <label for="inputEmail4">Centro educativo</label>
-              <input required type="tel" class="form-control" name="centro_educ" id="centro_educ" placeholder="Documento de identidad">
+              <input required type="tel" class="form-control" name="centro_educ" id="centro_educ" placeholder="Centro educativo">
             </div>
 
           </div>

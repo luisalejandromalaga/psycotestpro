@@ -30,35 +30,35 @@ Contacto
                     <div class="card mb-3  ">
                         <div class="card-body">
 
+<!---FORMULARIO------------------------------------------------------------------------------------------------------------>
 
+                                <form method="POST" action="{{route('contactanos')}}"  >
 
-                                <form>
-
-
+                                  @csrf
 
 
                                     <div class="form-group ">
                                       <label for="inputEmail4">Nombres y apellidos</label>
-                                      <input type="text" class="form-control" id="inputEmail4" placeholder="Nombres y apellidos">
+                                      <input type="text" class="form-control" name="name" placeholder="Nombres y apellidos">
                                     </div>
 
 
 
                                     <div class="form-group  ">
                                       <label class="text-left" for="inputEmail4">Correo electrónico</label>
-                                      <input type="text" class="form-control" id="inputEmail4" placeholder="Correo electrónico">
+                                      <input type="text" class="form-control" name="correo" placeholder="Correo electrónico">
                                     </div>
 
 
                                     <div class="form-group  ">
                                       <label class="text-left" for="inputEmail4">Número de celular</label>
-                                      <input type="tel" class="form-control" id="inputEmail4" placeholder="Número de celular">
+                                      <input type="tel" class="form-control" name="cel" placeholder="Número de celular">
                                     </div>
 
 
                                     <div class="form-group">
                                       <label for="exampleFormControlTextarea1">Comentario</label>
-                                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                      <textarea class="form-control" name="text" rows="5"></textarea>
                                     </div>
 
                            
@@ -70,6 +70,7 @@ Contacto
                                 </form>        
 
 
+<!--------------------------------------------------------------------------------------------------------------->
 
 
                         </div>
