@@ -1000,7 +1000,7 @@ class pdf extends Controller
 		$pdf->SetFont('Arial','',12);
 		$titulo = "INFORME DE EVALUACIÓN";
 
-
+		$pdf->Image('https://fotos.subefotos.com/2c92e0dce3aadadd24a73e7d2bd2f4f8o.jpg',160,null,-2000);
 		//$pdf->Cell(0,10,utf8_decode('TEPSI'),0,2);		
 		$pdf->Cell(0,10,utf8_decode($titulo),0,1,'C');
 		$pdf->Cell(0,10,'Nombre: '.$nombre,0,1);
